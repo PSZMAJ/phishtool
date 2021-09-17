@@ -9,8 +9,10 @@ echo "[1] --->Facebook"
 echo "[2] --->Steam"
 echo "================="
 
-read opcja
+sudo service apache2 start
 
+read opcja
+sudo 
 if [ $opcja = 1 ]
 then
 	echo "wybrales fb";
