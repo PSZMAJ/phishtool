@@ -1,28 +1,687 @@
+<html>
 
-<!DOCTYPE html>
-<html lang="pl" id="facebook" class="no_js">
-<head><meta charset="utf-8" /><meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" /><script nonce="Oync4hOR">window._cstart=+new Date();</script><script nonce="Oync4hOR">function envFlush(a){function b(b){for(var c in a)b[c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window.Env=window.Env||{},b(window.Env))}envFlush({"ajaxpipe_token":"AXj6hZnGB8KBP2AjF9g","timeslice_heartbeat_config":{"pollIntervalMs":33,"idleGapThresholdMs":60,"ignoredTimesliceNames":{"requestAnimationFrame":true,"Event listenHandler mousemove":true,"Event listenHandler mouseover":true,"Event listenHandler mouseout":true,"Event listenHandler scroll":true},"isHeartbeatEnabled":true,"isArtilleryOn":false},"shouldLogCounters":true,"timeslice_categories":{"react_render":true,"reflow":true},"sample_continuation_stacktraces":true,"dom_mutation_flag":true,"gk_requirelazy_mem":true,"gk_instrument_object_url":true,"stack_trace_limit":30,"timesliceBufferSize":5000,"show_invariant_decoder":false,"compat_iframe_token":"AQ4HZSq45OoXIqRDi24","isCQuick":false});</script><style nonce="Oync4hOR"></style><script nonce="Oync4hOR">__DEV__=0;CavalryLogger=window.CavalryLogger||function(a){this.lid=a,this.transition=!1,this.metric_collected=!1,this.is_detailed_profiler=!1,this.instrumentation_started=!1,this.pagelet_metrics={},this.events={},this.ongoing_watch={},this.values={t_cstart:window._cstart},this.piggy_values={},this.bootloader_metrics={},this.resource_to_pagelet_mapping={},this.initializeInstrumentation&&this.initializeInstrumentation()},CavalryLogger.prototype.setIsDetailedProfiler=function(a){this.is_detailed_profiler=a;return this},CavalryLogger.prototype.setTTIEvent=function(a){this.tti_event=a;return this},CavalryLogger.prototype.setValue=function(a,b,c,d){d=d?this.piggy_values:this.values;(typeof d[a]==="undefined"||c)&&(d[a]=b);return this},CavalryLogger.prototype.getLastTtiValue=function(){return this.lastTtiValue},CavalryLogger.prototype.setTimeStamp=CavalryLogger.prototype.setTimeStamp||function(a,b,c,d){this.mark(a);var e=this.values.t_cstart||this.values.t_start;e=d?e+d:CavalryLogger.now();this.setValue(a,e,b,c);this.tti_event&&a==this.tti_event&&(this.lastTtiValue=e,this.setTimeStamp("t_tti",b));return this},CavalryLogger.prototype.mark=typeof console==="object"&&console.timeStamp?function(a){console.timeStamp(a)}:function(){},CavalryLogger.prototype.addPiggyback=function(a,b){this.piggy_values[a]=b;return this},CavalryLogger.instances={},CavalryLogger.id=0,CavalryLogger.getInstance=function(a){typeof a==="undefined"&&(a=CavalryLogger.id);CavalryLogger.instances[a]||(CavalryLogger.instances[a]=new CavalryLogger(a));return CavalryLogger.instances[a]},CavalryLogger.setPageID=function(a){if(CavalryLogger.id===0){var b=CavalryLogger.getInstance();CavalryLogger.instances[a]=b;CavalryLogger.instances[a].lid=a;delete CavalryLogger.instances[0]}CavalryLogger.id=a},CavalryLogger.now=function(){return window.performance&&performance.timing&&performance.timing.navigationStart&&performance.now?performance.now()+performance.timing.navigationStart:new Date().getTime()},CavalryLogger.prototype.measureResources=function(){},CavalryLogger.prototype.profileEarlyResources=function(){},CavalryLogger.getBootloaderMetricsFromAllLoggers=function(){},CavalryLogger.start_js=function(){},CavalryLogger.start_js_script=function(){},CavalryLogger.done_js=function(){};CavalryLogger.getInstance().setTTIEvent("t_domcontent");CavalryLogger.prototype.measureResources=function(a,b){if(!this.log_resources)return;var c="bootload/"+a.name;if(this.bootloader_metrics[c]!==void 0||this.ongoing_watch[c]!==void 0)return;var d=CavalryLogger.now();this.ongoing_watch[c]=d;"start_"+c in this.bootloader_metrics||(this.bootloader_metrics["start_"+c]=d);b&&!("tag_"+c in this.bootloader_metrics)&&(this.bootloader_metrics["tag_"+c]=b);if(a.type==="js"){c="js_exec/"+a.name;this.ongoing_watch[c]=d}},CavalryLogger.prototype.stopWatch=function(a){if(this.ongoing_watch[a]){var b=CavalryLogger.now(),c=b-this.ongoing_watch[a];this.bootloader_metrics[a]=c;var d=this.piggy_values;a.indexOf("bootload")===0&&(d.t_resource_download||(d.t_resource_download=0),d.resources_downloaded||(d.resources_downloaded=0),d.t_resource_download+=c,d.resources_downloaded+=1,d["tag_"+a]=="_EF_"&&(d.t_pagelet_cssload_early_resources=b));delete this.ongoing_watch[a]}return this},CavalryLogger.getBootloaderMetricsFromAllLoggers=function(){var a={};Object.values(window.CavalryLogger.instances).forEach(function(b){b.bootloader_metrics&&Object.assign(a,b.bootloader_metrics)});return a},CavalryLogger.start_js=function(a){for(var b=0;b<a.length;++b)CavalryLogger.getInstance().stopWatch("js_exec/"+a[b])},CavalryLogger.start_js_script=function(a){if(!a||!a.dataset)return;CavalryLogger.start_js([a.dataset.bootloaderHash||a.dataset.bootloaderHashClient])},CavalryLogger.done_js=function(a){for(var b=0;b<a.length;++b)CavalryLogger.getInstance().stopWatch("bootload/"+a[b])},CavalryLogger.prototype.profileEarlyResources=function(a){for(var b=0;b<a.length;b++)this.measureResources({name:a[b][0],type:a[b][1]?"js":""},"_EF_")};CavalryLogger.getInstance().log_resources=true;CavalryLogger.getInstance().setIsDetailedProfiler(true);window.CavalryLogger&&CavalryLogger.getInstance().setTimeStamp("t_start");</script><noscript><meta http-equiv="refresh" content="0; URL=/?_fb_noscript=1" /></noscript><link rel="manifest" id="MANIFEST_LINK" href="/data/manifest/" crossorigin="use-credentials" /><title id="pageTitle">Facebook – zaloguj się lub zarejestruj</title><meta name="google" content="notranslate" /><meta property="og:site_name" content="Facebook" /><meta property="og:url" content="https://pl-pl.facebook.com/" /><meta property="og:image" content="https://www.facebook.com/images/fb_icon_325x325.png" /><meta property="og:locale" content="pl_PL" /><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebook.com/" /><link rel="alternate" media="handheld" href="https://m.facebook.com/" /><meta name="description" content="Zaloguj si&#x119; do Facebooka, aby zacz&#x105;&#x107; udost&#x119;pnia&#x107; r&#xf3;&#x17c;ne rzeczy oraz &#x142;&#x105;czy&#x107; si&#x119; ze znajomymi, rodzin&#x105; i lud&#x17a;mi, kt&#xf3;rych znasz." /><link rel="canonical" href="https://pl-pl.facebook.com/" /><link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico" /><link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yq/l/0,cross/L0VTH1UsUXD.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="0QQt+vI" />
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/y3/l/0,cross/5WfpJC2KSHe.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="XCvu4Ie" />
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/ya/l/0,cross/In62IlXitmY.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="Rj0nAwC" />
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yA/l/0,cross/v0EFzRMtYBQ.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="JLbymBn" />
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/y_/l/0,cross/F-VRA-G3bhw.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="9+Oy4Ic" />
-<script src="https://static.xx.fbcdn.net/rsrc.php/v3/yY/r/3-B1LPvrseX.js?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="A+mvvL2" nonce="Oync4hOR"></script>
-<script nonce="Oync4hOR">requireLazy(["HasteSupportData"],function(m){m.handle({"clpData":{"1814852":{"r":1},"1838142":{"r":1,"s":1},"1949898":{"r":1},"1848815":{"r":10000,"s":1},"1744178":{"r":1,"s":1}},"gkxData":{"5241":{"result":true,"hash":"AT7o1bCQPGpf3ShECDw"},"676837":{"result":false,"hash":"AT4N8wBZA8ctCdHw2Hc"},"708253":{"result":false,"hash":"AT5n4hBL3YTMnQWt-Bs"},"996940":{"result":false,"hash":"AT7opYuEGy3sjG1aKHU"},"1224637":{"result":false,"hash":"AT7JRluWxuwDm3XzQ38"},"1263340":{"result":false,"hash":"AT5bwizWgDaFQudmgoY"},"676920":{"result":true,"hash":"AT497IX4gOFG8gZe6nM"},"1073500":{"result":false,"hash":"AT7aJmfnqWyioxOOZUM"},"1167394":{"result":false,"hash":"AT7BpN-tlUPwbIIFcgA"},"1857581":{"result":false,"hash":"AT5yTxGMp6le0PAt710"},"2772":{"result":false,"hash":"AT5Eu244WIce7iwqXjo"},"3752":{"result":false,"hash":"AT6eS5UTkkMp_xbP_Zk"},"3831":{"result":false,"hash":"AT4W23lQ0XxAZniMkqs"},"4075":{"result":false,"hash":"AT4_ZQi0sTjSt-RxYCU"},"676838":{"result":false,"hash":"AT6nN1ehT9yq-2q63Dc"},"1217157":{"result":false,"hash":"AT6B7YmllOsArnK6En0"},"1554827":{"result":false,"hash":"AT7zueGLhGo0cT5xQFg"},"1738486":{"result":false,"hash":"AT4cX37oQco6DwhUVY4"}},"qplData":{"7758":{"r":1}}})});requireLazy(["TimeSliceImpl","ServerJS"],function(TimeSlice,ServerJS){(new ServerJS()).handle({"define":[["URLFragmentPreludeConfig",[],{"hashtagRedirect":true,"fragBlacklist":["nonce","access_token","oauth_token","xs","checkpoint_data","code"]},137],["CometPersistQueryParams",[],{"relative":{},"domain":{}},6231],["CookieDomain",[],{"domain":"facebook.com"},6421],["BootloaderConfig",[],{"deferBootloads":false,"jsRetries":[200,500],"jsRetryAbortNum":2,"jsRetryAbortTime":5,"silentDups":false,"hypStep4":false,"phdOn":false,"btCutoffIndex":3241},329],["CSSLoaderConfig",[],{"timeout":5000,"modulePrefix":"BLCSS:","loadEventSupported":true},619],["CookieCoreConfig",[],{"c_user":{"s":"None"},"cppo":{"t":86400,"s":"None"},"dpr":{"t":604800,"s":"None"},"fbl_ci":{"t":31536000,"s":"None"},"fbl_cs":{"t":31536000,"s":"None"},"fbl_st":{"t":31536000,"s":"Strict"},"i_user":{"s":"None"},"locale":{"t":604800,"s":"None"},"m_pixel_ratio":{"t":604800,"s":"None"},"noscript":{"s":"None"},"presence":{"t":2592000,"s":"None"},"sfau":{"s":"None"},"usida":{"s":"None"},"vpd":{"t":5184000,"s":"Lax"},"wd":{"t":604800,"s":"Lax"},"x-referer":{"s":"None"},"x-src":{"t":1,"s":"None"}},2104],["CurrentCommunityInitialData",[],{},490],["CurrentEnvironment",[],{"facebookdotcom":true,"messengerdotcom":false,"workplacedotcom":false,"instagramdotcom":false},827],["CurrentUserInitialData",[],{"ACCOUNT_ID":"0","USER_ID":"0","NAME":"","SHORT_NAME":null,"IS_BUSINESS_PERSON_ACCOUNT":false,"HAS_SECONDARY_BUSINESS_PERSON":false,"IS_FACEBOOK_WORK_ACCOUNT":false,"IS_MESSENGER_ONLY_USER":false,"IS_DEACTIVATED_ALLOWED_ON_MESSENGER":false,"IS_MESSENGER_CALL_GUEST_USER":false,"IS_WORK_MESSENGER_CALL_GUEST_USER":false,"APP_ID":"256281040558","IS_BUSINESS_DOMAIN":false},270],["DTSGInitialData",[],{},258],["ISB",[],{},330],["LSD",[],{"token":"AVoIgfFHyB0"},323],["ServerNonce",[],{"ServerNonce":"OC1jxHS8UnTqBzSvKjEAYa"},141],["SiteData",[],{"server_revision":1005123083,"client_revision":1005123083,"tier":"","push_phase":"C3","pkg_cohort":"BP:DEFAULT","haste_session":"19050.BP:DEFAULT.2.0.0.0.","pr":1,"haste_site":"www","be_one_ahead":false,"is_rtl":false,"is_comet":false,"is_experimental_tier":false,"is_jit_warmed_up":true,"hsi":"7069366812712964091-0","semr_host_bucket":"5","bl_hash_version":2,"skip_rd_bl":true,"comet_env":0,"spin":4,"__spin_r":1005123083,"__spin_b":"trunk","__spin_t":1645965225,"vip":"31.13.81.9"},317],["SprinkleConfig",[],{"param_name":"jazoest","version":2,"should_randomize":false},2111],["UserAgentData",[],{"browserArchitecture":"64","browserFullVersion":"98.0.1108.62","browserMinorVersion":0,"browserName":"Edge (Chromium Based)","browserVersion":98,"deviceName":"Unknown","engineName":"WebKit","engineVersion":"537.36","platformArchitecture":"64","platformName":"Windows","platformVersion":"10","platformFullVersion":"10"},527],["PromiseUsePolyfillSetImmediateGK",[],{"www_always_use_polyfill_setimmediate":false},2190],["KSConfig",[],{"killed":{"__set":["MOBILIZER_SELF_SERVE_OWNERSHIP_RESOLVER","MLHUB_FLOW_AUTOREFRESH_SEARCH","NEKO_DISABLE_CREATE_FOR_SAP","EO_DISABLE_SYSTEM_SERIAL_NUMBER_FREE_TYPING_IN_CPE_NON_CLIENT","MOBILITY_KILL_OLD_VISIBILITY_POSITION_SETTING","WORKPLACE_DISPLAY_TEXT_EVIDENCE_REPORTING","BUSINESS_INVITE_FLOW_WITH_SELLER_PROFILE","BUY_AT_UI_LINE_DELETE","BUSINESS_GRAPH_SETTING_APP_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_BU_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_ESG_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_PRODUCT_CATALOG_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_SESG_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_WABA_ASSIGNED_USERS_NEW_API","ADS_PLACEMENT_FIX_PUBLISHER_PLATFORMS_MUTATION","FORCE_FETCH_BOOSTED_COMPONENT_AFTER_ADS_CREATION","VIDEO_DIMENSIONS_FROM_PLAYER_IN_UPLOAD_DIALOG","SNIVY_GROUP_BY_EVENT_TRACE_ID_AND_NAME","ADS_STORE_VISITS_METRICS_DEPRECATION","DYNAMIC_ADS_SET_CATALOG_AND_PRODUCT_SET_TOGETHER","AD_DRAFT_ENABLE_SYNCRHONOUS_FRAGMENT_VALIDATION","NEKO_ENABLE_RESET_SAP_FOR_CREATE_AD_SET_CONTEXTUAL","SEPARATE_MESSAGING_COMACTIVITY_PAGE_PERMS","LAB_NET_NEW_UI_RELEASE","POCKET_MONSTERS_CREATE","POCKET_MONSTERS_DELETE","SRT_BANZAI_SRT_CORE_LOGGER","SRT_BANZAI_SRT_MAIN_LOGGER","WORKPLACE_PLATFORM_SECURE_APPS_MAILBOXES","POCKET_MONSTERS_UPDATE_NAME","IC_DISABLE_MERGE_TOOL_FEED_CHECK_FOR_REPLACE_SCHEDULE","ADS_EPD_IMPACTED_ADVERTISER_MIGRATE_XCONTROLLER","RECRUITING_CANDIDATE_PORTAL_ACCOUNT_DELETION_CARD"]},"ko":{"__set":["8H4bQmEiuLT","3OsLvnSHNTt","1G7wJ6bJt9K","9NpkGYwzrPG","3oh5Mw86USj","8NAceEy9JZo","7FOIzos6XJX","rf8JEPGgOi","4j36SVzvP3w","4NSq3ZC4ScE","53gCxKq281G","3yzzwBY7Npj","1onzIv0jH6H","8PlKuowafe8","1ntjZ2zgf03","4SIH2GRVX5W","2dhqRnqXGLQ","2WgiNOrHVuC","amKHb4Cw4WI","5mNEXob0nTj","8rDvN9vWdAK","9cL5o2kjfZo","5BdzWGmfvrA","DDZhogI19W","acrJTh9WGdp","1oOE64fL4wO","9Gd8qgRxn8z","MPMaqnqZ9c","5XCz1h9Iaw3","7r6mSP7ofr2","6DGPLrRdyts","aWxCyi1sEC7","9kCSDzzr8fu"]}},2580],["JSErrorLoggingConfig",[],{"appId":256281040558,"extra":[],"reportInterval":50,"sampleWeight":null,"sampleWeightKey":"__jssesw","projectBlocklist":[]},2776],["DataStoreConfig",[],{"expandoKey":"__FB_STORE","useExpando":true},2915],["CookieCoreLoggingConfig",[],{"maximumIgnorableStallMs":16.67,"sampleRate":9.7e-5,"sampleRateClassic":1.0e-10,"sampleRateFastStale":1.0e-8},3401],["ImmediateImplementationExperiments",[],{"prefer_message_channel":true},3419],["DTSGInitData",[],{"token":"","async_get_token":""},3515],["UriNeedRawQuerySVConfig",[],{"uris":["dms.netmng.com","doubleclick.net","r.msn.com","watchit.sky.com","graphite.instagram.com","www.kfc.co.th","learn.pantheon.io","www.landmarkshops.in","www.ncl.com","s0.wp.com","www.tatacliq.com","bs.serving-sys.com","kohls.com","lazada.co.th","xg4ken.com","technopark.ru","officedepot.com.mx","bestbuy.com.mx","booking.com","nibio.no"]},3871],["InitialCookieConsent",[],{"deferCookies":false,"initialConsent":{"__set":[1,2]},"noCookies":false,"shouldShowCookieBanner":false},4328],["TrustedTypesConfig",[],{"useTrustedTypes":false,"reportOnly":false},4548],["WebConnectionClassServerGuess",[],{"connectionClass":"EXCELLENT"},4705],["CometAltpayJsSdkIframeAllowedDomains",[],{"allowed_domains":["https:\/\/live.adyen.com","https:\/\/integration-facebook.payu.in","https:\/\/facebook.payulatam.com","https:\/\/secure.payu.com","https:\/\/facebook.dlocal.com","https:\/\/buy2.boku.com"]},4920],["BootloaderEndpointConfig",[],{"debugNoBatching":false,"endpointURI":"https:\/\/pl-pl.facebook.com\/ajax\/bootloader-endpoint\/"},5094],["BigPipeExperiments",[],{"link_images_to_pagelets":false,"enable_bigpipe_plugins":false},907],["AsyncRequestConfig",[],{"retryOnNetworkError":"1","useFetchStreamAjaxPipeTransport":false},328],["FbtQTOverrides",[],{"overrides":{}},551],["FbtResultGK",[],{"shouldReturnFbtResult":true,"inlineMode":"NO_INLINE"},876],["IntlPhonologicalRules",[],{"meta":{},"patterns":{}},1496],["IntlViewerContext",[],{"GENDER":3,"regionalLocale":null},772],["NumberFormatConfig",[],{"decimalSeparator":",","numberDelimiter":"\u00a0","minDigitsForThousandsSeparator":5,"standardDecimalPatternInfo":{"primaryGroupSize":3,"secondaryGroupSize":3},"numberingSystemData":null},54],["SessionNameConfig",[],{"seed":"2jqV"},757],["ZeroCategoryHeader",[],{},1127],["ZeroRewriteRules",[],{"rewrite_rules":{},"whitelist":{"\/hr\/r":1,"\/hr\/p":1,"\/zero\/unsupported_browser\/":1,"\/zero\/policy\/optin":1,"\/zero\/optin\/write\/":1,"\/zero\/optin\/legal\/":1,"\/zero\/optin\/free\/":1,"\/about\/privacy\/":1,"\/about\/privacy\/update\/":1,"\/privacy\/explanation\/":1,"\/zero\/toggle\/welcome\/":1,"\/zero\/toggle\/nux\/":1,"\/zero\/toggle\/settings\/":1,"\/fup\/interstitial\/":1,"\/work\/landing":1,"\/work\/login\/":1,"\/work\/email\/":1,"\/ai.php":1,"\/js_dialog_resources\/dialog_descriptions_android.json":0,"\/connect\/jsdialog\/MPlatformAppInvitesJSDialog\/":0,"\/connect\/jsdialog\/MPlatformOAuthShimJSDialog\/":0,"\/connect\/jsdialog\/MPlatformLikeJSDialog\/":0,"\/qp\/interstitial\/":1,"\/qp\/action\/redirect\/":1,"\/qp\/action\/close\/":1,"\/zero\/support\/ineligible\/":1,"\/zero_balance_redirect\/":1,"\/zero_balance_redirect":1,"\/zero_balance_redirect\/l\/":1,"\/l.php":1,"\/lsr.php":1,"\/ajax\/dtsg\/":1,"\/checkpoint\/block\/":1,"\/exitdsite":1,"\/zero\/balance\/pixel\/":1,"\/zero\/balance\/":1,"\/zero\/balance\/carrier_landing\/":1,"\/zero\/flex\/logging\/":1,"\/tr":1,"\/tr\/":1,"\/sem_campaigns\/sem_pixel_test\/":1,"\/bookmarks\/flyout\/body\/":1,"\/zero\/subno\/":1,"\/confirmemail.php":1,"\/policies\/":1,"\/mobile\/internetdotorg\/classifier\/":1,"\/zero\/dogfooding":1,"\/xti.php":1,"\/zero\/fblite\/config\/":1,"\/hr\/zsh\/wc\/":1,"\/ajax\/bootloader-endpoint\/":1,"\/mobile\/zero\/carrier_page\/":1,"\/mobile\/zero\/carrier_page\/education_page\/":1,"\/mobile\/zero\/carrier_page\/feature_switch\/":1,"\/mobile\/zero\/carrier_page\/settings_page\/":1,"\/aloha_check_build":1,"\/upsell\/zbd\/softnudge\/":1,"\/mobile\/zero\/af_transition\/":1,"\/mobile\/zero\/af_transition\/action\/":1,"\/mobile\/zero\/freemium\/":1,"\/mobile\/zero\/freemium\/redirect\/":1,"\/mobile\/zero\/freemium\/zero_fup\/":1,"\/privacy\/policy\/":1,"\/privacy\/center\/":1,"\/data\/manifest\/":1,"\/4oh4.php":1,"\/autologin.php":1,"\/birthday_help.php":1,"\/checkpoint\/":1,"\/contact-importer\/":1,"\/cr.php":1,"\/legal\/terms\/":1,"\/login.php":1,"\/login\/":1,"\/mobile\/account\/":1,"\/n\/":1,"\/remote_test_device\/":1,"\/upsell\/buy\/":1,"\/upsell\/buyconfirm\/":1,"\/upsell\/buyresult\/":1,"\/upsell\/promos\/":1,"\/upsell\/continue\/":1,"\/upsell\/h\/promos\/":1,"\/upsell\/loan\/learnmore\/":1,"\/upsell\/purchase\/":1,"\/upsell\/promos\/upgrade\/":1,"\/upsell\/buy_redirect\/":1,"\/upsell\/loan\/buyconfirm\/":1,"\/upsell\/loan\/buy\/":1,"\/upsell\/sms\/":1,"\/wap\/a\/channel\/reconnect.php":1,"\/wap\/a\/nux\/wizard\/nav.php":1,"\/wap\/appreg.php":1,"\/wap\/birthday_help.php":1,"\/wap\/c.php":1,"\/wap\/confirmemail.php":1,"\/wap\/cr.php":1,"\/wap\/login.php":1,"\/wap\/r.php":1,"\/zero\/datapolicy":1,"\/a\/timezone.php":1,"\/a\/bz":1,"\/bz\/reliability":1,"\/r.php":1,"\/mr\/":1,"\/reg\/":1,"\/registration\/log\/":1,"\/terms\/":1,"\/f123\/":1,"\/expert\/":1,"\/experts\/":1,"\/terms\/index.php":1,"\/terms.php":1,"\/srr\/":1,"\/msite\/redirect\/":1,"\/fbs\/pixel\/":1,"\/contactpoint\/preconfirmation\/":1,"\/contactpoint\/cliff\/":1,"\/contactpoint\/confirm\/submit\/":1,"\/contactpoint\/confirmed\/":1,"\/contactpoint\/login\/":1,"\/preconfirmation\/contactpoint_change\/":1,"\/help\/contact\/":1,"\/survey\/":1,"\/upsell\/loyaltytopup\/accept\/":1,"\/settings\/":1,"\/lite\/":1,"\/zero_status_update\/":1,"\/operator_store\/":1,"\/upsell\/":1,"\/wifiauth\/login\/":1}},1478],["IntlNumberTypeConfig",[],{"impl":"if (n === 1) { return IntlVariations.NUMBER_ONE; } else if (n \u0025 10 >= 2 && n \u0025 10 \u003C= 4 && (n \u0025 100 \u003C 12 || n \u0025 100 > 14)) { return IntlVariations.NUMBER_FEW; } else { return IntlVariations.NUMBER_MANY; }"},3405],["ServerTimeData",[],{"serverTime":1645965225265,"timeOfRequestStart":1645965225214,"timeOfResponseStart":1645965225214},5943],["AnalyticsCoreData",[],{"device_id":"$^|AcaU5S85N8zz21hzvpOH-F6KPdvZHs2XWW8R7vnEMet0khLyD5wzjzERbyqANJH6IsVMfYims8jxW35P4Fh0LrK0YQ|fd.AcaNFs2f-M2rLqgxMAJ8q6FwLuTN14-smYLoBQIu9oSEADoTjMU21l2ArhxJdrbnJYXt3L8_lqtCQVCE-XmQk5SN","app_id":"256281040558","enable_bladerunner":false,"enable_ack":true,"push_phase":"C3","enable_observer":false,"enable_dataloss_timer":false},5237],["CookieConsentIFrameConfig",[],{"consent_param":"FQAREREA.ARZU_gpDeXmuHRI1gTJnEmFr1pg5qxAayYk1qF_VV9i5s73J","allowlisted_iframes":[]},5540],["cr:696703",[],{"__rc":[null,"Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:708886",["EventProfilerImpl"],{"__rc":["EventProfilerImpl","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:717822",["TimeSliceImpl"],{"__rc":["TimeSliceImpl","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:806696",["clearTimeoutBlue"],{"__rc":["clearTimeoutBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:807042",["setTimeoutBlue"],{"__rc":["setTimeoutBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:896462",["setIntervalAcrossTransitionsBlue"],{"__rc":["setIntervalAcrossTransitionsBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:986633",["setTimeoutAcrossTransitionsBlue"],{"__rc":["setTimeoutAcrossTransitionsBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1003267",["clearIntervalBlue"],{"__rc":["clearIntervalBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1183579",["InlineFbtResultImpl"],{"__rc":["InlineFbtResultImpl","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:925100",["RunBlue"],{"__rc":["RunBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:729414",["VisualCompletion"],{"__rc":["VisualCompletion","Aa2VHYRxqcie__afC39HvukYvEaHf-KGYR9Zwlekt0ANJUDYpsOGZIXHE0F3uc82i7vQpHxIyOXQNUptEyn-L5pf"]},-1],["cr:1094907",[],{"__rc":[null,"Aa0EyYs9dv1q8JW4N0zwUOFDU4ZdMvXwkWIDAhwhcJkR83bnDaqS09L8H1tKmX8oJDV_8QR9p-3bVoseh1OZK-Y"]},-1],["EventConfig",[],{"sampling":{"bandwidth":0,"play":0,"playing":0,"progress":0,"pause":0,"ended":0,"seeked":0,"seeking":0,"waiting":0,"loadedmetadata":0,"canplay":0,"selectionchange":0,"change":0,"timeupdate":0,"adaptation":0,"focus":0,"blur":0,"load":0,"error":0,"message":0,"abort":0,"storage":0,"scroll":200000,"mousemove":20000,"mouseover":10000,"mouseout":10000,"mousewheel":1,"MSPointerMove":10000,"keydown":0.1,"click":0.02,"mouseup":0.02,"__100ms":0.001,"__default":5000,"__min":100,"__interactionDefault":200,"__eventDefault":100000},"page_sampling_boost":1,"interaction_regexes":{},"interaction_boost":{},"event_types":{},"manual_instrumentation":false,"profile_eager_execution":false,"disable_heuristic":true,"disable_event_profiler":false},1726],["AdsInterfacesSessionConfig",[],{},2393],["IntlCurrentLocale",[],{"code":"pl_PL"},5954],["USIDMetadata",[],{"browser_id":"?","tab_id":"","page_id":"Pr7yqw99fd4x2","transition_id":0,"version":6},5888],["cr:686",[],{"__rc":[null,"Aa3r5dMUH6TixfQ7OE4D_Snd6UPtldTnkLAJ7H5Hx0ikFeB369lf6JnkfryTqFZq7ZCY-9tCKUKQWin-pV7srEWJ"]},-1],["cr:1984081",[],{"__rc":[null,"Aa005YH7mj9jWlcjDySqKOQspJfqyV6QsibSvDg4v8kbUiVH3nFyMWfaKxM6SZ6P4drZwZ5ek-5ZyIkyPyWJVEHAqrv1"]},-1]],"require":[["markJSEnabled"],["lowerDomain"],["URLFragmentPrelude"],["Primer"],["BigPipe"],["Bootloader"],["TimeSlice"],["AsyncRequest"],["BanzaiScuba_DEPRECATED"],["VisualCompletionGating"],["FbtLogging"],["IntlQtEventFalcoEvent"],["RequireDeferredReference","unblock",[],[["AsyncRequest","BanzaiScuba_DEPRECATED","VisualCompletionGating","FbtLogging","IntlQtEventFalcoEvent"],"sd"]],["RequireDeferredReference","unblock",[],[["AsyncRequest","BanzaiScuba_DEPRECATED","VisualCompletionGating","FbtLogging","IntlQtEventFalcoEvent"],"css"]]]});});</script></head><body class="fbIndex UIPage_LoggedOut _-kb _605a b_c3pyn-ahh  webkit win x1 Locale_pl_PL" dir="ltr"><script type="text/javascript" nonce="Oync4hOR">requireLazy(["bootstrapWebSession"],function(j){j(1645965225)})</script><div class="_li" id="u_0_3_5T"><div class="_3_s0 _1toe _3_s1 _3_s1 uiBoxGray noborder" data-testid="ax-navigation-menubar" id="u_0_4_iX"><div class="_608m"><div class="clearfix _ikh _tb6"><div class="_4bl7"><span class="mrm _3bcv _50f3">Przejdź do</span></div><div class="_4bl9 _3bcp"><div class="_6a _608n" aria-label="Asystent nawigacji" role="menubar" id="u_0_5_j9"><div class="_6a uiPopover" id="u_0_6_yb"><a role="button" class="_42ft _4jy0 _55pi _2agf _4o_4 _63xb _p _4jy3 _517h _51sy" href="#" style="max-width:200px;" aria-haspopup="true" aria-expanded="false" rel="toggle" id="u_0_7_uX"><span class="_55pe">Sekcje tej strony</span><span class="_4o_3 _3-99"><i class="img sp_gMujFo71RwJ sx_a3bbbe"></i></span></a></div><div class="_6a _3bcs"></div><div class="_6a mrm uiPopover" id="u_0_8_o9"><a role="button" class="_42ft _4jy0 _55pi _2agf _4o_4 _3_s2 _63xb _p _4jy3 _4jy1 selected _51sy" href="#" style="max-width:200px;" aria-haspopup="true" tabindex="-1" aria-expanded="false" rel="toggle" id="u_0_9_y4"><span class="_55pe">Pomoc w zakresie dostępności</span><span class="_4o_3 _3-99"><i class="img sp_gMujFo71RwJ sx_67944a"></i></span></a></div></div></div></div></div></div><div id="globalContainer" class="uiContextualLayerParent"><div class="fb_content clearfix " id="content" role="main"><div><div class="_8esj _95k9 _8esf _8opv _8f3m _8ilg _8icx _8op_ _95ka"><div class="_8esk"><div class="_8esl"><div class="_8ice"><img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook" /></div><h2 class="_8eso">Facebook pomaga kontaktować się z innymi osobami oraz udostępniać im różne informacje i materiały.</h2></div><div class="_8esn"><div class="_8iep _8icy _9ahz _9ah-"><div class="_6luv _52jv"><form class="_9vtf" data-testid="royal_login_form" action="/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjQ1OTY1MjI1LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D" method="post" onsubmit="" id="u_0_a_or"><input type="hidden" name="jazoest" value="2917" autocomplete="off" /><input type="hidden" name="lsd" value="AVoIgfFHyB0" autocomplete="off" /><div><div class="_6lux"><input type="text" class="inputtext _55r1 _6luy" name="email" id="email" data-testid="royal_email" placeholder="Adres e-mail lub numer telefonu" autofocus="1" aria-label="Adres e-mail lub numer telefonu" /></div><div class="_6lux"><div class="_6luy _55r1 _1kbt" id="passContainer"><input type="password" class="inputtext _55r1 _6luy _9npi" name="pass" id="pass" data-testid="royal_pass" placeholder="Has&#x142;o" aria-label="Has&#x142;o" /><div class="_9ls7" id="u_0_b_mS"><a href="#" role="button"><div class="_9lsa"><div class="_9lsb" id="u_0_c_RO"></div></div></a></div></div></div></div><input type="hidden" autocomplete="off" name="login_source" value="comet_headerless_login" /><input type="hidden" autocomplete="off" name="next" value="" /><div class="_6ltg"><button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_d_Gi">Zaloguj się</button></div><div class="_6ltj"><a href="https://pl-pl.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjQ1OTY1MjI1LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;ars=facebook_login">Nie pamiętasz hasła?</a></div><div class="_8icz"></div><div class="_6ltg"><a role="button" class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" href="#" ajaxify="/reg/spotlight/" id="u_0_2_F/" data-testid="open-registration-form-button" rel="async">Utwórz nowe konto</a></div></form></div><div id="reg_pages_msg" class="_58mk"><a href="/pages/create/?ref_type=registration_form" class="_8esh">Utwórz stronę</a> dla gwiazdy, marki lub firmy.</div></div></div></div></div></div></div><div class=""><div class="_95ke _8opy"><div id="pageFooter" data-referrer="page_footer" data-testid="page_footer"><ul class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i" data-nocookies="1"><li>Polski</li><li><a class="_sv4" dir="ltr" href="https://www.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;en_US&quot;, &quot;pl_PL&quot;, &quot;https:\/\/www.facebook.com\/&quot;, &quot;www_list_selector&quot;, 0); return false;" title="English (US)">English (US)</a></li><li><a class="_sv4" dir="ltr" href="https://sz-pl.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;sz_PL&quot;, &quot;pl_PL&quot;, &quot;https:\/\/sz-pl.facebook.com\/&quot;, &quot;www_list_selector&quot;, 1); return false;" title="Silesian">ślōnskŏ gŏdka</a></li><li><a class="_sv4" dir="ltr" href="https://ru-ru.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;ru_RU&quot;, &quot;pl_PL&quot;, &quot;https:\/\/ru-ru.facebook.com\/&quot;, &quot;www_list_selector&quot;, 2); return false;" title="Russian">Русский</a></li><li><a class="_sv4" dir="ltr" href="https://de-de.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;de_DE&quot;, &quot;pl_PL&quot;, &quot;https:\/\/de-de.facebook.com\/&quot;, &quot;www_list_selector&quot;, 3); return false;" title="German">Deutsch</a></li><li><a class="_sv4" dir="ltr" href="https://fr-fr.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;fr_FR&quot;, &quot;pl_PL&quot;, &quot;https:\/\/fr-fr.facebook.com\/&quot;, &quot;www_list_selector&quot;, 4); return false;" title="French (France)">Français (France)</a></li><li><a class="_sv4" dir="ltr" href="https://it-it.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;it_IT&quot;, &quot;pl_PL&quot;, &quot;https:\/\/it-it.facebook.com\/&quot;, &quot;www_list_selector&quot;, 5); return false;" title="Italian">Italiano</a></li><li><a class="_sv4" dir="ltr" href="https://uk-ua.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;uk_UA&quot;, &quot;pl_PL&quot;, &quot;https:\/\/uk-ua.facebook.com\/&quot;, &quot;www_list_selector&quot;, 6); return false;" title="Ukrainian">Українська</a></li><li><a class="_sv4" dir="ltr" href="https://es-es.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;es_ES&quot;, &quot;pl_PL&quot;, &quot;https:\/\/es-es.facebook.com\/&quot;, &quot;www_list_selector&quot;, 7); return false;" title="Spanish (Spain)">Español (España)</a></li><li><a class="_sv4" dir="ltr" href="https://pt-br.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;pt_BR&quot;, &quot;pl_PL&quot;, &quot;https:\/\/pt-br.facebook.com\/&quot;, &quot;www_list_selector&quot;, 8); return false;" title="Portuguese (Brazil)">Português (Brasil)</a></li><li><a class="_sv4" dir="rtl" href="https://ar-ar.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;ar_AR&quot;, &quot;pl_PL&quot;, &quot;https:\/\/ar-ar.facebook.com\/&quot;, &quot;www_list_selector&quot;, 9); return false;" title="Arabic">العربية</a></li><li><a role="button" class="_42ft _4jy0 _517i _517h _51sy" rel="dialog" ajaxify="/settings/language/language/?uri=https%3A%2F%2Far-ar.facebook.com%2F&amp;source=www_list_selector_more" href="#" title="Wy&#x15b;wietl wi&#x119;cej j&#x119;zyk&#xf3;w"><i class="img sp_gMujFo71RwJ sx_25f620"></i></a></li></ul><div id="contentCurve"></div><div id="pageFooterChildren" role="contentinfo" aria-label="Odno&#x15b;niki do stron Facebooka"><ul class="uiList pageFooterLinkList _509- _4ki _703 _6-i"><li><a href="/reg/" title="Zarejestruj si&#x119; na Facebooku">Zarejestruj się</a></li><li><a href="/login/" title="Zaloguj si&#x119; do Facebooka">Zaloguj się</a></li><li><a href="https://messenger.com/" title="Wypr&#xf3;buj aplikacj&#x119; Messenger.">Messenger</a></li><li><a href="/lite/" title="Facebook Lite dla systemu Android">Facebook Lite</a></li><li><a href="https://pl-pl.facebook.com/watch/" title="Przegl&#x105;daj filmy w Watch.">Watch</a></li><li><a href="/places/" title="Sprawd&#x17a; najpopularniejsze miejsca na Facebooku.">Miejsca</a></li><li><a href="/games/" title="Wypr&#xf3;buj gry na Facebooku">Gry</a></li><li><a href="/marketplace/" title="Kupuj i sprzedawaj, korzystaj&#x105;c z Marketplace Facebooka.">Marketplace</a></li><li><a href="https://pay.facebook.com/" title="Dowiedz si&#x119; wi&#x119;cej o Facebook Pay" target="_blank">Facebook Pay</a></li><li><a href="https://www.oculus.com/" title="Dowiedz si&#x119; wi&#x119;cej o Oculusie" target="_blank">Oculus</a></li><li><a href="https://portal.facebook.com/" title="Dowiedz si&#x119; wi&#x119;cej na temat urz&#x105;dzenia Portal Facebooka" target="_blank">Portal</a></li><li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=AT3ywtJm-ZK4p_tV1x-C6MUHCOPDRCje-ERCl8gbHSc0PeZgycu7j-ZqbrrLDHLV6t3FMYiD0i0b2VUmZjgS3HT6YMZkkT2XtZVYwS01U1YXyBx-JQ2CJWFHjI8VYojrKMomeRTocfGFX_KVl3S-Xw" title="Sprawd&#x17a; Instagram" target="_blank" rel="nofollow" data-lynx-mode="asynclazy">Instagram</a></li><li><a href="https://www.bulletin.com/" title="Sprawd&#x17a; biuletyn Bulletin">Bulletin</a></li><li><a href="/local/lists/245019872666104/" title="Przejrzyj katalog list lokalnych.">Lokalne</a></li><li><a href="/fundraisers/" title="Wp&#x142;a&#x107; datki na szlachetne cele.">Zbiórki pieniędzy</a></li><li><a href="/biz/directory/" title="Przejrzyj nasz katalog us&#x142;ug Facebooka.">Usługi</a></li><li><a href="/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D" title="Sprawd&#x17a; Centrum informacji o g&#x142;osowaniu.">Centrum informacji o głosowaniu</a></li><li><a href="/groups/explore/" title="Przegl&#x105;daj nasze grupy.">Grupy</a></li><li><a href="https://about.facebook.com/" accesskey="8" title="Przeczytaj nasz blog, odkryj centrum zasob&#xf3;w i znajd&#x17a; prac&#x119;.">Informacje</a></li><li><a href="/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto" title="Reklama na Facebooku">Utwórz reklamę</a></li><li><a href="/pages/create/?ref_type=site_footer" title="Utw&#xf3;rz stron&#x119;">Utwórz stronę</a></li><li><a href="https://developers.facebook.com/?ref=pf" title="Tw&#xf3;rz na naszej platformie.">Twórcy aplikacji</a></li><li><a href="/careers/?ref=pf" title="Buduj swoj&#x105; karier&#x119; w naszej wspania&#x142;ej firmie.">Praca</a></li><li><a data-nocookies="1" href="/privacy/explanation/" title="Dowiedz si&#x119; wi&#x119;cej o swojej prywatno&#x15b;ci na Facebooku.">Prywatność</a></li><li><a href="/policies/cookies/" title="Dowiedz si&#x119; wi&#x119;cej na temat plik&#xf3;w cookies i Facebooka." data-nocookies="1">Pliki cookie</a></li><li><a class="_41ug" data-nocookies="1" href="https://pl-pl.facebook.com/help/568137493302217" title="Dowiedz si&#x119; wi&#x119;cej o opcjach wy&#x15b;wietlania reklamy.">Opcje wyświetlania reklam<i class="img sp_gMujFo71RwJ sx_bdef52"></i></a></li><li><a data-nocookies="1" href="/policies?ref=pf" accesskey="9" title="Zapoznaj si&#x119; z naszym regulaminem i zasadami.">Regulamin</a></li><li><a href="/help/?ref=pf" accesskey="0" title="Odwied&#x17a; nasze Centrum pomocy.">Pomoc</a></li><li><a accesskey="6" class="accessible_elem" href="/settings" title="Wy&#x15b;wietl i edytuj ustawienia Facebooka.">Ustawienia</a></li><li><a accesskey="7" class="accessible_elem" href="/allactivity?privacy_source=activity_log_top_menu" title="Zobacz dziennik aktywno&#x15b;ci">Dziennik aktywności</a></li></ul></div><div class="mvl copyright"><div><span> Meta © 2022</span></div></div></div></div></div></div><div></div><span><img src="https://facebook.com/security/hsts-pixel.gif?c=3.2.5" width="0" height="0" style="display:none" /></span></div><div style="display:none"></div>
-<script>requireLazy(["HasteSupportData"],function(m){m.handle({"bxData":{"875231":{"uri":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/yD\/r\/d4ZIVX-5C-b.ico"}},"gkxData":{"4166":{"result":false,"hash":"AT7yrb5QuQ92736uicM"},"677762":{"result":false,"hash":"AT6e9MvRyXpacwOYy90"},"1908135":{"result":false,"hash":"AT6miGypJl3m2Aq4TZ4"},"3959":{"result":true,"hash":"AT5An4B4pPVNHiK8kz8"},"524":{"result":false,"hash":"AT6SLNReg1ijh3bZsm0"},"819236":{"result":false,"hash":"AT66vW86d2uJ-kXPK-c"},"12":{"result":false,"hash":"AT7MdxfOMhMQYcz02vY"},"1646":{"result":false,"hash":"AT4QD7x1GFNYajJZ9K0"},"3521":{"result":false,"hash":"AT6JXdAr_AL9yUh_KqE"},"729631":{"result":false,"hash":"AT7b0tj8AHWG5lTFoYo"},"1281505":{"result":false,"hash":"AT4PHZM9gFoypCjQIk0"},"1291023":{"result":false,"hash":"AT519LseIG1nwq3ocrE"},"1294182":{"result":false,"hash":"AT4vd6mwrtAJouEJPfs"},"1399218":{"result":true,"hash":"AT6guCW1eyIkOV1EV-s"},"1401060":{"result":true,"hash":"AT5aetN5Gb3reIXVR3k"},"1485055":{"result":true,"hash":"AT5lkGxmhfrVKlcnQ_s"},"1596063":{"result":false,"hash":"AT7JHuDWtaOqRuBUAJw"},"1597642":{"result":true,"hash":"AT78G4fDXhlnMl7o6Lg"},"1647260":{"result":false,"hash":"AT4WdkrQSGE5dIsEfto"},"1695831":{"result":false,"hash":"AT7RA6TJmDFGF-D6rxY"},"1722014":{"result":false,"hash":"AT6_M5gpc6RLrHjcXEY"},"1742795":{"result":false,"hash":"AT6dbnY5JZm_bTINZ9E"},"1778302":{"result":false,"hash":"AT65fisZhmc2X92EmzI"},"1840809":{"result":false,"hash":"AT5nYctoTsr7alRiu00"},"1848749":{"result":false,"hash":"AT5GsH9Kb-3W-taZaTk"},"1906871":{"result":false,"hash":"AT6dIBiVv9bUDXlmE7k"},"1985945":{"result":true,"hash":"AT66Oo5lY__5wUTpRwM"},"1099893":{"result":false,"hash":"AT5kly2LSZV_DKGRW_0"}},"qexData":{"644":{"r":null},"647":{"r":null},"648":{"r":null},"650":{"r":null},"651":{"r":null}}})});requireLazy(["Bootloader"],function(m){m.handlePayload({"consistency":{"rev":1005123083},"rsrcMap":{"ZaK7abM":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yS\/r\/UXJE_KFXmfT.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"s84NfZE":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y6\/r\/vTYwjKT7sH3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"jpW6YKq":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iMvY4\/yW\/l\/pl_PL\/U-S1pvGpBD_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"UiX2b\/\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y4\/r\/sgppQ99JK5S.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"GKQxLch":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yL\/r\/28UYrgwTZRM.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"79Y8bmL":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ilXx4\/yv\/l\/pl_PL\/gsc_cV2tO3j.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"VdF6ypd":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yq\/r\/zlQWXKE0vU3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Vlvz+ek":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y4\/r\/BJocMV4OuoF.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TUxV68S":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ys\/r\/AEurEMwqHIo.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"nc2ZTn5":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yL\/r\/YWyRTb_tcMn.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"WSN8hNl":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yj\/r\/w-Pc7DjVMKP.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"NGhzvdR":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iORF4\/yf\/l\/pl_PL\/3tjoCJzZ_U5.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"K4rcX2j":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yQ\/r\/ITiHdzpBHmR.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"zA+yJGG":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iVms4\/yc\/l\/pl_PL\/mr8_Iyxpev9.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"2\/maQ\/Q":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yk\/r\/R9lc5DaDrGJ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"44V3O9S":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y_\/r\/sZFCrCJN4y2.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"My1mElx":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yA\/r\/ySleGcBTRQu.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4SF1lqC":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ippX4\/yl\/l\/pl_PL\/zijUJ18jHYp.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"BDpTGZx":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iekb4\/yP\/l\/pl_PL\/G0zRA40LCwj.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"qIKb5tG":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yI\/r\/hzSmVdwU082.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"ltr6kwu":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yg\/r\/30MwAtuDo-F.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"lCiWnqM":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iYHs4\/y0\/l\/pl_PL\/EN_hECBOZeR.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"tW++MDr":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3is684\/yu\/l\/pl_PL\/Fov8dHvEToh.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"5KIWCue":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y2\/l\/0,cross\/pUMTuCRzeU-.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"447V0wf":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yN\/r\/ienjv-pekTk.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"kyDs\/hf":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yL\/r\/HnQOIcA4C2E.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"0nrQV8U":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3icHj4\/yt\/l\/pl_PL\/-GFovdClM0y.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"HISU2Y8":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ifWW4\/y4\/l\/pl_PL\/ftep7inh4JA.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"RPTEMgb":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iq3P4\/y7\/l\/pl_PL\/lq0FgSG8xv9.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"wwWSdab":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iTDg4\/yb\/l\/pl_PL\/-ZN3z0eJ_EB.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Z+F3+uV":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yA\/r\/S01awpPM0Yf.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"F8jo2Dj":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iZby4\/yj\/l\/pl_PL\/blI70sZ4EXX.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Xd7iACQ":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yT\/l\/0,cross\/lQtP02O_fZJ.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"ucgonvq":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iOuX4\/ye\/l\/pl_PL\/eaJKA1_FBlE.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"zPLgIGT":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yz\/r\/lYejkzyV906.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"mI4DZcu":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yO\/l\/0,cross\/LIIo-GhzMnE.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"VtZ600j":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yk\/l\/0,cross\/G91QWLyJUD2.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"mb1xUfC":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i9Fm4\/yS\/l\/pl_PL\/ALXLmaldEIA.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"iWdauk4":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y_\/r\/iO9gEAPCw4m.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"+HQDBGp":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yi\/l\/0,cross\/qM8EvsbauIy.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"d9ty0O5":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y4\/r\/HYqEQJiWbpi.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"zVEN6sn":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yC\/r\/FmcD4lm55ny.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"F3qVlGE":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iAW84\/yO\/l\/pl_PL\/BHr3pIhHThZ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"9eVXrI+":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yK\/r\/NiOmJDqk9W3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"XNjXVmx":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yB\/r\/CFq00TCnS5W.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"DEYIkKN":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yl\/r\/81-AtL1bbi3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"S0iIFme":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y8\/l\/0,cross\/2OKIXnv6VKr.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"imZCt2M":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yI\/r\/fIkJzusDMQM.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"jM4vQSb":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iRGX4\/yC\/l\/pl_PL\/aU_jYWuJszR.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"B6rkNZo":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iNN14\/y7\/l\/pl_PL\/PbnyDjBuHYI.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"oW+j\/g+":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ihCc4\/yv\/l\/pl_PL\/uPlFJ8Od9Do.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Jujczgk":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iScA4\/yi\/l\/pl_PL\/4D1QyyU3zY1.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"RwNGFt8":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yR\/r\/NTBXcpfVOaa.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"vdQD4Vn":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iUWE4\/yR\/l\/pl_PL\/PmWQ1CGwB09.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"CNG5DkE":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ivN64\/yq\/l\/pl_PL\/y3dqWwCW0pF.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"F\/p4sht":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yW\/r\/DPBVbTz2YCI.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"mgMxG66":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iMk94\/yB\/l\/pl_PL\/JuTEMyDLunG.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"UJAzhS\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y0\/r\/FubvKx--XXz.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"fmA3M6T":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y3\/r\/MkXZ7P8-_wS.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"JcJMiIF":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iZId4\/yA\/l\/pl_PL\/IqcYfClG8hd.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"De+IC9p":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y5\/r\/INzMGM0pNVc.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"s3WLiTz":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iX1_4\/y0\/l\/pl_PL\/zS_uRc-hT3_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"C9AITxH":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yY\/r\/12z-HvWLcxJ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"lIaxUyf":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yH\/l\/0,cross\/myB7fC_Aisw.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"PogKv1z":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yI\/r\/1kkgmb4qXqd.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"J53Jy5d":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i3J14\/ye\/l\/pl_PL\/38_AmIJrWWH.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"lVnD5Bq":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/l\/0,cross\/4mTozwScDXp.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"jj29UZB":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yE\/r\/w5W7kbBpKe-.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"14CUPgD":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yl\/r\/dK1GYenhcNG.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"CFBT6qm":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/l\/0,cross\/Oeg8_LnasTL.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"\/lt63Q3":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ih274\/yD\/l\/pl_PL\/MRIdLwfyZsb.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"qMSEK9T":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ym\/l\/0,cross\/4NtTz0U948U.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"G2PzJgj":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yA\/l\/0,cross\/qFmQNn3xEhe.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"dsV5VvK":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yQ\/l\/0,cross\/lZ2emUOGiQ-.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"oU8\/MN9":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iGRn4\/y2\/l\/pl_PL\/wHKsAL-VPoV.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"\/IwjMgV":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yQ\/l\/0,cross\/UJN_4PD4Dp-.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"80yj66R":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i5hY4\/yh\/l\/pl_PL\/xFGK8jaGTQm.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"s62DdRg":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yx\/l\/0,cross\/UESFucZ3PWH.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"+\/MBO\/Z":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ym\/l\/0,cross\/mB_NoxX_qkG.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"SrpP6vx":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yx\/r\/bll4-7p4Ipj.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"ojj6\/KZ":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yO\/l\/0,cross\/knFf-idvPuR.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"otwomTz":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ilh44\/yc\/l\/pl_PL\/dGSqjSnTzQr.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"LP\/Y1SY":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yS\/r\/Oayj55MrqrQ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"aF9iPHd":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iOuX4\/yH\/l\/pl_PL\/yMzqnohiu7a.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4UyVtYJ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yM\/r\/9hrWv7_K4uA.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"cQlqoMK":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y1\/r\/X9wmmKmG14u.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"9jeSk45":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i_9H4\/yG\/l\/pl_PL\/SCBWxoK-dMc.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"C0n1piG":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yA\/r\/D2eTTbfntwH.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"rvsXwIm":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y7\/r\/N18KqXec5nr.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"OkZBozP":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yH\/r\/rfWGyy24PNO.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TuiPcIO":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yO\/l\/0,cross\/ewAXCgN2oRp.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"DD828tu":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yR\/l\/0,cross\/CPCDsDuMhpe.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"e2\/yV+b":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i_Vy4\/yh\/l\/pl_PL\/VOEZ_2aDj7V.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"MShROPU":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yR\/r\/6zWfLYER1_0.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"NaRov2Z":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iA614\/yX\/l\/pl_PL\/iecet726DmQ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"fQWn5t9":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/r\/vAHIMha0-m0.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"dLOHVPE":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yZ\/l\/0,cross\/V4STEdMjXbF.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"bimf09X":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yX\/r\/YwOx_bjxFCX.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"P3yeHF6":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iOuX4\/yc\/l\/pl_PL\/Q8kPprHxZYD.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"MtBBfeh":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ixzJ4\/yc\/l\/pl_PL\/rXNLsog58Fm.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"2tzBHGQ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iPre4\/yj\/l\/pl_PL\/Rpks8KvjEHM.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"OlNebLC":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ijQ14\/yf\/l\/pl_PL\/I8vV9rEUOjW.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"XmXQW8M":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ii-y4\/yT\/l\/pl_PL\/zL30nJ9OV6L.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"R7NyDOd":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iDq84\/y5\/l\/pl_PL\/EZHCJuH3pOV.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"r0c6+Fu":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yH\/l\/0,cross\/e78qlX-ku82.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"gWMJgTe":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yH\/r\/iGksp69foR_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"hIek+bG":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yY\/r\/DZ_VBlsy-dC.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Gj8v9L4":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yW\/r\/ah4jcC-CgjO.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"rRSeTc7":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iTjA4\/yt\/l\/pl_PL\/qRL_bd8Xlrg.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"8ELCBwH":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/r\/VRzSVH5iU-V.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"GD5lBVK":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iD-G4\/yH\/l\/pl_PL\/yxAhxtvtwfW.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"SWx3yNv":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yW\/r\/O_SjdcR-xKL.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"x22Oby4":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y0\/r\/fN3cCj7Il4D.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"oE4DofT":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yJ\/r\/EejAgnHUad4.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"VvVFw8n":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yn\/r\/AWepvf-vdZG.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"P\/mr5VE":{"type":"css","src":"data:text\/css; charset=utf-8;base64,I2Jvb3Rsb2FkZXJfUF9tcjVWRXtoZWlnaHQ6NDJweDt9LmJvb3Rsb2FkZXJfUF9tcjVWRXtkaXNwbGF5OmJsb2NrIWltcG9ydGFudDt9","nc":1,"d":1}},"compMap":{"ODS":{"r":["ZaK7abM","s84NfZE"],"be":1},"Dock":{"r":["ZaK7abM","jpW6YKq","UiX2b\/\/","Rj0nAwC","GKQxLch","9+Oy4Ic","79Y8bmL","VdF6ypd","s84NfZE","Vlvz+ek"],"be":1},"WebSpeedInteractionsTypedLogger":{"r":["ZaK7abM","TUxV68S","s84NfZE","nc2ZTn5"],"rds":{"m":["BanzaiScuba_DEPRECATED"]},"be":1},"AsyncRequest":{"r":["ZaK7abM","jpW6YKq","VdF6ypd","s84NfZE","Rj0nAwC"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"],"r":["UiX2b\/\/"]},"be":1},"DOM":{"r":["s84NfZE","Rj0nAwC"],"be":1},"Form":{"r":["WSN8hNl","s84NfZE","Rj0nAwC"],"be":1},"FormSubmit":{"r":["ZaK7abM","jpW6YKq","NGhzvdR","WSN8hNl","VdF6ypd","s84NfZE","Rj0nAwC"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED"],"r":["UiX2b\/\/"]},"be":1},"Input":{"r":["WSN8hNl"],"be":1},"Live":{"r":["ZaK7abM","jpW6YKq","K4rcX2j","zA+yJGG","s84NfZE","2\/maQ\/Q","Rj0nAwC"],"be":1},"Toggler":{"r":["ZaK7abM","jpW6YKq","UiX2b\/\/","Rj0nAwC","GKQxLch","9+Oy4Ic","VdF6ypd","s84NfZE","Vlvz+ek"],"be":1},"Tooltip":{"r":["ZaK7abM","jpW6YKq","UiX2b\/\/","44V3O9S","Rj0nAwC","My1mElx","GKQxLch","4SF1lqC","BDpTGZx","VdF6ypd","s84NfZE","Vlvz+ek","qIKb5tG","ltr6kwu","WSN8hNl","nc2ZTn5"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","PageTransitions","BanzaiScuba_DEPRECATED","Animation"],"r":["79Y8bmL"]},"be":1},"URI":{"r":[],"be":1},"trackReferrer":{"r":[],"rds":{"m":["BanzaiScuba_DEPRECATED"],"r":["ZaK7abM","s84NfZE"]},"be":1},"PhotoTagApproval":{"r":["lCiWnqM","s84NfZE","tW++MDr","Rj0nAwC"],"be":1},"PhotoSnowlift":{"r":["ZaK7abM","5KIWCue","447V0wf","kyDs\/hf","0nrQV8U","jpW6YKq","HISU2Y8","RPTEMgb","wwWSdab","Z+F3+uV","nc2ZTn5","UiX2b\/\/","F8jo2Dj","44V3O9S","XCvu4Ie","Xd7iACQ","ucgonvq","Rj0nAwC","lCiWnqM","My1mElx","zPLgIGT","mI4DZcu","VtZ600j","GKQxLch","mb1xUfC","9+Oy4Ic","iWdauk4","ltr6kwu","+HQDBGp","d9ty0O5","K4rcX2j","zVEN6sn","F3qVlGE","9eVXrI+","XNjXVmx","DEYIkKN","4SF1lqC","S0iIFme","imZCt2M","jM4vQSb","B6rkNZo","oW+j\/g+","zA+yJGG","BDpTGZx","Jujczgk","RwNGFt8","vdQD4Vn","CNG5DkE","WSN8hNl","VdF6ypd","F\/p4sht","mgMxG66","s84NfZE","Vlvz+ek","JLbymBn","UJAzhS\/","qIKb5tG","79Y8bmL"],"rds":{"m":["Animation","VisualCompletionGating","FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED","PageTransitions"],"r":["fmA3M6T"]},"be":1},"PhotoTagger":{"r":["JcJMiIF","De+IC9p","s3WLiTz","ZaK7abM","C9AITxH","lIaxUyf","PogKv1z","J53Jy5d","5KIWCue","kyDs\/hf","0nrQV8U","lVnD5Bq","jpW6YKq","jj29UZB","HISU2Y8","RPTEMgb","wwWSdab","14CUPgD","Z+F3+uV","nc2ZTn5","CFBT6qm","\/lt63Q3","qMSEK9T","UiX2b\/\/","G2PzJgj","44V3O9S","XCvu4Ie","Xd7iACQ","ucgonvq","dsV5VvK","oU8\/MN9","Rj0nAwC","lCiWnqM","My1mElx","\/IwjMgV","80yj66R","s62DdRg","zPLgIGT","+\/MBO\/Z","VtZ600j","SrpP6vx","GKQxLch","mb1xUfC","9+Oy4Ic","iWdauk4","ltr6kwu","ojj6\/KZ","otwomTz","K4rcX2j","zVEN6sn","9eVXrI+","LP\/Y1SY","XNjXVmx","aF9iPHd","DEYIkKN","4SF1lqC","S0iIFme","imZCt2M","jM4vQSb","NGhzvdR","oW+j\/g+","zA+yJGG","BDpTGZx","4UyVtYJ","cQlqoMK","Jujczgk","RwNGFt8","vdQD4Vn","fmA3M6T","WSN8hNl","VdF6ypd","F\/p4sht","mgMxG66","9jeSk45","s84NfZE","C0n1piG","rvsXwIm","Vlvz+ek","OkZBozP","TuiPcIO","JLbymBn","UJAzhS\/","DD828tu","qIKb5tG","79Y8bmL","e2\/yV+b","MShROPU","NaRov2Z"],"rdfds":{"m":["GamesVideoModerationRulesNux.react","GamesVideoDeleteCommentDialog.react","GamesVideoCommentRemovedDialog.react","CometTooltipDeferredImpl.react"],"r":["fQWn5t9","dLOHVPE","bimf09X","P3yeHF6","MtBBfeh","2tzBHGQ","OlNebLC"]},"rds":{"m":["PresenceStatus","FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED","Animation","PageTransitions","LynxAsyncCallbackFalcoEvent","CometSuspenseFalcoEvent"],"r":["F3qVlGE"]},"be":1},"PhotoTags":{"r":["lCiWnqM","VdF6ypd","s84NfZE","tW++MDr","Rj0nAwC"],"be":1},"TagTokenizer":{"r":["ZaK7abM","XmXQW8M","R7NyDOd","Xd7iACQ","Rj0nAwC","GKQxLch","mb1xUfC","r0c6+Fu","RwNGFt8","WSN8hNl","VdF6ypd","s84NfZE","JLbymBn","tW++MDr"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"],"r":["UiX2b\/\/"]},"be":1},"AsyncDialog":{"r":["ZaK7abM","5KIWCue","kyDs\/hf","jpW6YKq","UiX2b\/\/","44V3O9S","ucgonvq","Rj0nAwC","My1mElx","GKQxLch","9+Oy4Ic","ltr6kwu","9eVXrI+","4SF1lqC","WSN8hNl","VdF6ypd","s84NfZE","Vlvz+ek","JLbymBn","qIKb5tG","nc2ZTn5"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"Hovercard":{"r":["ZaK7abM","jpW6YKq","RPTEMgb","nc2ZTn5","qMSEK9T","UiX2b\/\/","44V3O9S","XCvu4Ie","Xd7iACQ","Rj0nAwC","My1mElx","s62DdRg","GKQxLch","9+Oy4Ic","otwomTz","aF9iPHd","4SF1lqC","WSN8hNl","VdF6ypd","s84NfZE","Vlvz+ek","qIKb5tG","ltr6kwu"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED","PageTransitions","Animation"],"r":["79Y8bmL"]},"be":1},"XSalesPromoWWWDetailsDialogAsyncController":{"r":["gWMJgTe"],"be":1},"XOfferController":{"r":["hIek+bG"],"be":1},"PerfXSharedFields":{"r":["VdF6ypd","s84NfZE"],"be":1},"KeyEventTypedLogger":{"r":["ZaK7abM","Gj8v9L4","s84NfZE","nc2ZTn5"],"rds":{"m":["BanzaiScuba_DEPRECATED"]},"be":1},"Dialog":{"r":["ZaK7abM","jpW6YKq","UiX2b\/\/","Xd7iACQ","Rj0nAwC","GKQxLch","9+Oy4Ic","WSN8hNl","VdF6ypd","mgMxG66","s84NfZE","Vlvz+ek","My1mElx","ltr6kwu","79Y8bmL","nc2ZTn5"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","Animation","PageTransitions","BanzaiScuba_DEPRECATED"]},"be":1},"ExceptionDialog":{"r":["s3WLiTz","ZaK7abM","5KIWCue","kyDs\/hf","jpW6YKq","qMSEK9T","UiX2b\/\/","44V3O9S","XCvu4Ie","ucgonvq","Rj0nAwC","My1mElx","GKQxLch","mb1xUfC","9+Oy4Ic","9eVXrI+","4SF1lqC","rRSeTc7","vdQD4Vn","WSN8hNl","VdF6ypd","s84NfZE","Vlvz+ek","qIKb5tG","nc2ZTn5"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"QuickSandSolver":{"r":["ZaK7abM","jpW6YKq","8ELCBwH","GD5lBVK","SWx3yNv","WSN8hNl","VdF6ypd","F\/p4sht","x22Oby4","s84NfZE","Rj0nAwC"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"],"r":["UiX2b\/\/"]},"be":1},"ConfirmationDialog":{"r":["oE4DofT","GKQxLch","WSN8hNl","s84NfZE","Rj0nAwC"],"be":1},"QPLInspector":{"r":["VvVFw8n"],"be":1},"ReactDOM":{"r":["My1mElx","ltr6kwu","nc2ZTn5","qIKb5tG","s84NfZE","Rj0nAwC"],"be":1},"ContextualLayerInlineTabOrder":{"r":["Rj0nAwC","zPLgIGT","GKQxLch","otwomTz","BDpTGZx","s84NfZE"],"be":1},"XUIDialogButton.react":{"r":["ZaK7abM","5KIWCue","kyDs\/hf","jpW6YKq","44V3O9S","XCvu4Ie","ucgonvq","My1mElx","GKQxLch","mb1xUfC","9+Oy4Ic","9eVXrI+","VdF6ypd","s84NfZE","Vlvz+ek","Rj0nAwC","qIKb5tG","nc2ZTn5"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"],"r":["UiX2b\/\/"]},"be":1},"XUIDialogBody.react":{"r":["44V3O9S","XCvu4Ie","My1mElx","mb1xUfC","9+Oy4Ic","vdQD4Vn","s84NfZE","Vlvz+ek","ZaK7abM","qIKb5tG","nc2ZTn5"],"be":1},"XUIDialogFooter.react":{"r":["5KIWCue","qMSEK9T","44V3O9S","XCvu4Ie","ucgonvq","My1mElx","mb1xUfC","9+Oy4Ic","vdQD4Vn","s84NfZE","Vlvz+ek","ZaK7abM","qIKb5tG","nc2ZTn5"],"be":1},"XUIDialogTitle.react":{"r":["ZaK7abM","5KIWCue","kyDs\/hf","jpW6YKq","44V3O9S","ucgonvq","My1mElx","9+Oy4Ic","4SF1lqC","VdF6ypd","s84NfZE","Vlvz+ek","Rj0nAwC","qIKb5tG","nc2ZTn5"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"],"r":["UiX2b\/\/"]},"be":1},"XUIGrayText.react":{"r":["44V3O9S","XCvu4Ie","My1mElx","mb1xUfC","vdQD4Vn","s84NfZE","Vlvz+ek","ZaK7abM","qIKb5tG","nc2ZTn5"],"be":1},"DialogX":{"r":["ZaK7abM","jpW6YKq","UiX2b\/\/","Rj0nAwC","GKQxLch","9+Oy4Ic","4SF1lqC","WSN8hNl","VdF6ypd","s84NfZE","Vlvz+ek"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"React":{"r":["My1mElx","nc2ZTn5"],"be":1}}})});</script>
-<script>requireLazy(["InitialJSLoader"], function(InitialJSLoader) {InitialJSLoader.loadOnDOMContentReady(["jpW6YKq","fmA3M6T","UiX2b\/\/","44V3O9S","GKQxLch","ZaK7abM","My1mElx","VdF6ypd","s84NfZE","Vlvz+ek","BDpTGZx","zPLgIGT","ltr6kwu","79Y8bmL","WSN8hNl","nc2ZTn5","qIKb5tG","P\/mr5VE"]);});</script>
-<script>requireLazy(["TimeSliceImpl","ServerJS"],function(TimeSlice,ServerJS){var s=(new ServerJS());s.handle({"define":[["LinkshimHandlerConfig",[],{"supports_meta_referrer":true,"default_meta_referrer_policy":"origin-when-crossorigin","switched_meta_referrer_policy":"origin","non_linkshim_lnfb_mode":null,"link_react_default_hash":"AT2lyUuXs6uaIqKUUDp_8vSMVFHyFKyShviN7VEoznOP2dYJvaQJL3sAW-pPF5A1mWWR1lmOu0wyBg5aRjT6aRkMVAm2Ke_cFWRe4t4CEuELiJvpqMYhiMjWYztI2I2VyBLmznp1T-XrncFgkJ-ibg","untrusted_link_default_hash":"AT3aRULVcaJRyvdW6nj3H6zgFtf2ecgfFr4acOBiliahx691O8fvkuC5aQrQqhKqtWBWWYcOuDlwqjEdLO-gi0k9uARzSb1Y7cIrFHKIeNQIIiZMv822kSLH1X3PryBbITKjY66IVyLJLLgS5X_ryw","linkshim_host":"l.facebook.com","linkshim_path":"\/l.php","linkshim_enc_param":"h","linkshim_url_param":"u","use_rel_no_opener":false,"always_use_https":true,"onion_always_shim":true,"middle_click_requires_event":false,"www_safe_js_mode":"asynclazy","m_safe_js_mode":"MLynx_asynclazy","ghl_param_link_shim":false,"click_ids":[],"is_linkshim_supported":true,"current_domain":"facebook.com","blocklisted_domains":["ad.doubleclick.net","ads-encryption-url-example.com","bs.serving-sys.com","ad.atdmt.com","adform.net","ad13.adfarm1.adition.com","ilovemyfreedoms.com","secure.adnxs.com"],"is_mobile_device":false},27]],"instances":[["__inst_5b4d0c00_0_0_1k",["Menu","XUIMenuWithSquareCorner","XUIMenuTheme"],[[],{"id":"u_0_0_RI","behaviors":[{"__m":"XUIMenuWithSquareCorner"}],"theme":{"__m":"XUIMenuTheme"}}],2],["__inst_5b4d0c00_0_1_7n",["Menu","MenuItem","__markup_3310c079_0_0_UN","HTML","__markup_3310c079_0_1_DG","__markup_3310c079_0_2_EU","__markup_3310c079_0_3_yo","XUIMenuWithSquareCorner","XUIMenuTheme"],[[{"value":"key_shortcuts","ctor":{"__m":"MenuItem"},"markup":{"__m":"__markup_3310c079_0_0_UN"},"label":"Pomoc do skr\u00f3t\u00f3w klawiaturowych...","title":"","className":null},{"href":"\/help\/accessibility","target":"_blank","value":"help_center","ctor":{"__m":"MenuItem"},"markup":{"__m":"__markup_3310c079_0_1_DG"},"label":"Centrum pomocy w zakresie dost\u0119pno\u015bci","title":"","className":null},{"href":"\/help\/contact\/accessibility","target":"_blank","value":"submit_feedback","ctor":{"__m":"MenuItem"},"markup":{"__m":"__markup_3310c079_0_2_EU"},"label":"Prze\u015blij opini\u0119","title":"","className":null},{"href":"\/accessibility","target":"_blank","value":"facebook_page","ctor":{"__m":"MenuItem"},"markup":{"__m":"__markup_3310c079_0_3_yo"},"label":"Aktualizacje ze strony Dost\u0119pno\u015b\u0107 Facebooka","title":"Aktualizacje ze strony Dost\u0119pno\u015b\u0107 Facebooka","className":null}],{"id":"u_0_1_Ao","behaviors":[{"__m":"XUIMenuWithSquareCorner"}],"theme":{"__m":"XUIMenuTheme"}}],2],["__inst_e5ad243d_0_0_eu",["PopoverMenu","__inst_1de146dc_0_1_Tp","__elem_ec77afbd_0_1_S2","__inst_5b4d0c00_0_1_7n"],[{"__m":"__inst_1de146dc_0_1_Tp"},{"__m":"__elem_ec77afbd_0_1_S2"},{"__m":"__inst_5b4d0c00_0_1_7n"},[]],2],["__inst_e5ad243d_0_1_2v",["PopoverMenu","__inst_1de146dc_0_0_b1","__elem_ec77afbd_0_0_05","__inst_5b4d0c00_0_0_1k"],[{"__m":"__inst_1de146dc_0_0_b1"},{"__m":"__elem_ec77afbd_0_0_05"},{"__m":"__inst_5b4d0c00_0_0_1k"},[]],2],["__inst_1de146dc_0_0_b1",["Popover","__elem_1de146dc_0_0_hN","__elem_ec77afbd_0_0_05","ContextualLayerAutoFlip","ContextualDialogArrow"],[{"__m":"__elem_1de146dc_0_0_hN"},{"__m":"__elem_ec77afbd_0_0_05"},[{"__m":"ContextualLayerAutoFlip"},{"__m":"ContextualDialogArrow"}],{"alignh":"left","position":"below"}],2],["__inst_1de146dc_0_1_Tp",["Popover","__elem_1de146dc_0_1_ol","__elem_ec77afbd_0_1_S2","ContextualLayerAutoFlip","ContextualDialogArrow"],[{"__m":"__elem_1de146dc_0_1_ol"},{"__m":"__elem_ec77afbd_0_1_S2"},[{"__m":"ContextualLayerAutoFlip"},{"__m":"ContextualDialogArrow"}],{"alignh":"right","position":"below"}],2]],"markup":[["__markup_3310c079_0_0_UN",{"__html":"Pomoc do skr\u00f3t\u00f3w klawiaturowych..."},1],["__markup_3310c079_0_1_DG",{"__html":"Centrum pomocy w zakresie dost\u0119pno\u015bci"},1],["__markup_3310c079_0_2_EU",{"__html":"Prze\u015blij opini\u0119"},1],["__markup_3310c079_0_3_yo",{"__html":"Aktualizacje ze strony Dost\u0119pno\u015b\u0107 Facebooka"},1]],"elements":[["__elem_a588f507_0_1_ME","u_0_3_5T",1],["__elem_3fc3da18_0_0_Cz","u_0_4_iX",1],["__elem_51be6cb7_0_0_kT","u_0_5_j9",1],["__elem_1de146dc_0_0_hN","u_0_6_yb",1],["__elem_ec77afbd_0_0_05","u_0_7_uX",2],["__elem_1de146dc_0_1_ol","u_0_8_o9",1],["__elem_ec77afbd_0_1_S2","u_0_9_y4",2],["__elem_a588f507_0_0_Q5","globalContainer",2],["__elem_a588f507_0_2_Rz","content",1],["__elem_835c633a_0_0_Zm","u_0_a_or",1],["__elem_9f5fac15_0_0_LX","passContainer",1],["__elem_558608f3_0_0_x8","pass",1],["__elem_a588f507_0_3_rW","u_0_b_mS",1],["__elem_a588f507_0_4_7r","u_0_c_RO",1],["__elem_45d73b5d_0_0_0d","u_0_d_Gi",1]],"require":[["ServiceWorkerLoginAndLogout","login",[],[]],["WebPixelRatioDetector","startDetecting",[],[false]],["ScriptPath","set",[],["XIndexReduxController","a1f3c513",{"imp_id":"16D9UG5bKjYhfZinY","ef_page":null,"uri":"https:\/\/pl-pl.facebook.com\/"}]],["UITinyViewportAction","init",[],[]],["ResetScrollOnUnload","init",["__elem_a588f507_0_0_Q5"],[{"__m":"__elem_a588f507_0_0_Q5"}]],["AccessibilityWebVirtualCursorClickLogger","init",["__elem_a588f507_0_0_Q5"],[[{"__m":"__elem_a588f507_0_0_Q5"}]]],["KeyboardActivityLogger","init",[],[]],["FocusRing","init",[],[]],["HardwareCSS","init",[],[]],["NavigationAssistantController","init",["__elem_3fc3da18_0_0_Cz","__elem_51be6cb7_0_0_kT","__inst_5b4d0c00_0_0_1k","__inst_5b4d0c00_0_1_7n","__inst_e5ad243d_0_0_eu","__inst_e5ad243d_0_1_2v"],[{"__m":"__elem_3fc3da18_0_0_Cz"},{"__m":"__elem_51be6cb7_0_0_kT"},{"__m":"__inst_5b4d0c00_0_0_1k"},{"__m":"__inst_5b4d0c00_0_1_7n"},null,{"accessibilityPopoverMenu":{"__m":"__inst_e5ad243d_0_0_eu"},"globalPopoverMenu":null,"sectionsPopoverMenu":{"__m":"__inst_e5ad243d_0_1_2v"}},true]],["__inst_e5ad243d_0_1_2v"],["__inst_1de146dc_0_0_b1"],["__inst_e5ad243d_0_0_eu"],["__inst_1de146dc_0_1_Tp"],["IntlUtils"],["FBLynx","setupDelegation",[],[]],["LoginFormController","init",["__elem_835c633a_0_0_Zm","__elem_45d73b5d_0_0_0d"],[{"__m":"__elem_835c633a_0_0_Zm"},{"__m":"__elem_45d73b5d_0_0_0d"},null,true,{"pubKey":{"publicKey":"1e51cfad775693bd30d8fb82d2d0f61670d6bd98d7723a77f54f28b0d131ad3e","keyId":33}}]],["BrowserPrefillLogging","initContactpointFieldLogging",[],[{"contactpointFieldID":"email","serverPrefill":""}]],["BrowserPrefillLogging","initPasswordFieldLogging",[],[{"passwordFieldID":"pass"}]],["FocusListener"],["FlipDirectionOnKeypress"],["LoginFormToggle","initToggle",["__elem_a588f507_0_3_rW","__elem_a588f507_0_4_7r","__elem_558608f3_0_0_x8","__elem_9f5fac15_0_0_LX"],[{"__m":"__elem_a588f507_0_3_rW"},{"__m":"__elem_a588f507_0_4_7r"},{"__m":"__elem_558608f3_0_0_x8"},{"__m":"__elem_9f5fac15_0_0_LX"}]],["Animation"],["PageTransitions"],["RequireDeferredReference","unblock",[],[["BanzaiScuba_DEPRECATED","Animation","FbtLogging","IntlQtEventFalcoEvent","PageTransitions"],"sd"]],["RequireDeferredReference","unblock",[],[["BanzaiScuba_DEPRECATED","Animation","FbtLogging","IntlQtEventFalcoEvent","PageTransitions"],"css"]],["TimeSliceImpl"],["HasteSupportData"],["ServerJS"],["Run"],["InitialJSLoader"]],"contexts":[[{"__m":"__elem_a588f507_0_1_ME"},true],[{"__m":"__elem_a588f507_0_2_Rz"},true]]});requireLazy(["Run"],function(Run){Run.onAfterLoad(function(){s.cleanup(TimeSlice)})});});</script>
-<script>now_inl=(function(){var p=window.performance;return p&&p.now&&p.timing&&p.timing.navigationStart?function(){return p.now()+p.timing.navigationStart}:function(){return new Date().getTime()};})();window.__bigPipeFR=now_inl();</script>
-<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yq/l/0,cross/L0VTH1UsUXD.css?_nc_x=Ij3Wp8lg5Kz" as="style" />
-<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/y3/l/0,cross/5WfpJC2KSHe.css?_nc_x=Ij3Wp8lg5Kz" as="style" />
-<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/ya/l/0,cross/In62IlXitmY.css?_nc_x=Ij3Wp8lg5Kz" as="style" />
-<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yA/l/0,cross/v0EFzRMtYBQ.css?_nc_x=Ij3Wp8lg5Kz" as="style" />
-<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/UXJE_KFXmfT.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="Oync4hOR" />
-<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3iMvY4/yW/l/pl_PL/U-S1pvGpBD_.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="Oync4hOR" />
-<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/y_/l/0,cross/F-VRA-G3bhw.css?_nc_x=Ij3Wp8lg5Kz" as="style" />
-<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/zlQWXKE0vU3.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="Oync4hOR" />
-<link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/vTYwjKT7sH3.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="Oync4hOR" />
-<script>window.__bigPipeCtor=now_inl();requireLazy(["BigPipe"],function(BigPipe){define("__bigPipe",[],window.bigPipe=new BigPipe({"forceFinish":true,"config":{"flush_pagelets_asap":true,"dispatch_pagelet_replayable_actions":false}}));});</script>
-<script nonce="Oync4hOR">(function(){var n=now_inl();requireLazy(["__bigPipe"],function(bigPipe){bigPipe.beforePageletArrive("first_response",n);})})();</script>
-<script nonce="Oync4hOR">requireLazy(["__bigPipe"],(function(bigPipe){bigPipe.onPageletArrive({displayResources:["0QQt+vI","XCvu4Ie","Rj0nAwC","JLbymBn","ZaK7abM","jpW6YKq","9+Oy4Ic","VdF6ypd","s84NfZE","P/mr5VE"],id:"first_response",phase:0,last_in_phase:true,tti_phase:0,all_phases:[63],hsrp:{hblp:{consistency:{rev:1005123083}}},allResources:["jpW6YKq","fmA3M6T","UiX2b//","44V3O9S","GKQxLch","ZaK7abM","My1mElx","VdF6ypd","s84NfZE","Vlvz+ek","BDpTGZx","0QQt+vI","XCvu4Ie","Rj0nAwC","JLbymBn","9+Oy4Ic","zPLgIGT","ltr6kwu","79Y8bmL","WSN8hNl","P/mr5VE","nc2ZTn5","qIKb5tG"]});}));</script>
-<script>requireLazy(["__bigPipe"],function(bigPipe){bigPipe.setPageID("7069366812712964091-0")});CavalryLogger.setPageID("7069366812712964091-0");</script><script nonce="Oync4hOR">(function(){var n=now_inl();requireLazy(["__bigPipe"],function(bigPipe){bigPipe.beforePageletArrive("last_response",n);})})();</script>
-<script nonce="Oync4hOR">requireLazy(["__bigPipe"],(function(bigPipe){bigPipe.onPageletArrive({displayResources:["ZaK7abM"],id:"last_response",phase:63,last_in_phase:true,the_end:true,jsmods:{define:[["TimeSliceInteractionSV",[],{on_demand_reference_counting:true,on_demand_profiling_counters:true,default_rate:1000,lite_default_rate:100,interaction_to_lite_coinflip:{ADS_INTERFACES_INTERACTION:0,ads_perf_scenario:0,ads_wait_time:0,Event:1},interaction_to_coinflip:{ADS_INTERFACES_INTERACTION:1,ads_perf_scenario:1,ads_wait_time:1,Event:100},enable_heartbeat:true,maxBlockMergeDuration:0,maxBlockMergeDistance:0,enable_banzai_stream:true,user_timing_coinflip:50,banzai_stream_coinflip:0,compression_enabled:true,ref_counting_fix:false,ref_counting_cont_fix:false,also_record_new_timeslice_format:false,force_async_request_tracing_on:false},2609],["WebDriverConfig",[],{isTestRunning:false,isJestE2ETestRun:false,auxiliaryServiceInfo:{},testPath:null,originHost:null},5332],["cr:1642797",["BanzaiBase"],{__rc:["BanzaiBase","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1039",[],{__rc:[null,"Aa01WAlEzPDYdZ5VTwX-CZFCUte9MhaOur6cQnd9V-Z_NR7_HlcwZ1Cg7uPT43kuUZwmrOOliFg"]},-1],["cr:1041",[],{__rc:[null,"Aa01WAlEzPDYdZ5VTwX-CZFCUte9MhaOur6cQnd9V-Z_NR7_HlcwZ1Cg7uPT43kuUZwmrOOliFg"]},-1],["cr:1048",[],{__rc:[null,"Aa01WAlEzPDYdZ5VTwX-CZFCUte9MhaOur6cQnd9V-Z_NR7_HlcwZ1Cg7uPT43kuUZwmrOOliFg"]},-1],["cr:917439",["PageTransitionsBlue"],{__rc:["PageTransitionsBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1108857",[],{__rc:[null,"Aa2Lej7P1qhr56J4zNk2Z2AuTjGj3T-9Z7NbpoYJOLUQUa3-5U8CnS29sCJiqtt5HMY1T2kraNNrwp716w"]},-1],["cr:1294158",["React.classic"],{__rc:["React.classic","Aa1tCcE3x6CJ5h6-LKE_4NeZTWD4mMwkMLTpdPsGb4GlwQmXbbR7UCNZwAeDwAL2GEinS1lvUtHYO399r3Y26fZblHPU"]},-1],["cr:1294246",["ReactDOM.classic"],{__rc:["ReactDOM.classic","Aa1tCcE3x6CJ5h6-LKE_4NeZTWD4mMwkMLTpdPsGb4GlwQmXbbR7UCNZwAeDwAL2GEinS1lvUtHYO399r3Y26fZblHPU"]},-1],["cr:1069930",[],{__rc:[null,"Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1083116",["XAsyncRequest"],{__rc:["XAsyncRequest","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1083117",[],{__rc:[null,"Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:11202",[],{__rc:[null,"Aa2Lej7P1qhr56J4zNk2Z2AuTjGj3T-9Z7NbpoYJOLUQUa3-5U8CnS29sCJiqtt5HMY1T2kraNNrwp716w"]},-1],["cr:888908",["warningBlue"],{__rc:["warningBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:971473",["LayerHideOnTransition"],{__rc:["LayerHideOnTransition","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1105154",[],{__rc:[null,"Aa2Lej7P1qhr56J4zNk2Z2AuTjGj3T-9Z7NbpoYJOLUQUa3-5U8CnS29sCJiqtt5HMY1T2kraNNrwp716w"]},-1],["BanzaiConfig",[],{MAX_SIZE:10000,MAX_WAIT:150000,MIN_WAIT:null,RESTORE_WAIT:150000,blacklist:["time_spent"],disabled:false,gks:{boosted_pagelikes:true,mercury_send_error_logging:true,platform_oauth_client_events:true,graphexplorer:true,sticker_search_ranking:true},known_routes:["artillery_javascript_actions","artillery_javascript_trace","artillery_logger_data","logger","falco","gk2_exposure","js_error_logging","loom_trace","marauder","perfx_custom_logger_endpoint","qex","require_cond_exposure_logging","sri_logger_data"],should_drop_unknown_routes:true,should_log_unknown_routes:false},7],["PageTransitionsConfig",[],{reloadOnBootloadError:true},1067],["CoreWarningGK",[],{forceWarning:false},725],["cr:692209",["cancelIdleCallbackBlue"],{__rc:["cancelIdleCallbackBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1292365",["React-prod.classic"],{__rc:["React-prod.classic","Aa2Lej7P1qhr56J4zNk2Z2AuTjGj3T-9Z7NbpoYJOLUQUa3-5U8CnS29sCJiqtt5HMY1T2kraNNrwp716w"]},-1],["cr:1344485",["ReactDOM.classic.prod-or-profiling"],{__rc:["ReactDOM.classic.prod-or-profiling","Aa2Lej7P1qhr56J4zNk2Z2AuTjGj3T-9Z7NbpoYJOLUQUa3-5U8CnS29sCJiqtt5HMY1T2kraNNrwp716w"]},-1],["cr:983844",[],{__rc:[null,"Aa2Lej7P1qhr56J4zNk2Z2AuTjGj3T-9Z7NbpoYJOLUQUa3-5U8CnS29sCJiqtt5HMY1T2kraNNrwp716w"]},-1],["cr:1344486",["ReactDOM.classic.prod"],{__rc:["ReactDOM.classic.prod","Aa0gnejVwjXSuvSruhWYA4xN_Ei_TKsaYO5ssTrM1M43Q64utaGt_tRTNg-CUZ0Pe4YCRkpsX0r7m6JKDuDQDOEFJArBydLhQA"]},-1],["cr:1344487",["ReactDOM-prod.classic"],{__rc:["ReactDOM-prod.classic","Aa2W292rhvC8SDKCltaX-R2lVVqQ7o3zvcVJYXIgnL3fo6SiqYZ_3boH7mBskO5K6cQL5ixOSX00qH2bgkKWF09ztdEFqacvNHu2poyd"]},-1],["cr:1353359",["EventListenerImplForBlue"],{__rc:["EventListenerImplForBlue","Aa07GfjfERQkYY2AHpGiXqUNcMsmwSDbt5kbhKs6MdR30CSELW0Tvgx3Ib0g_ZDTl_l1-N7U3e5hmOLVfwqC16D62Oz0nsTblg"]},-1],["KillabyteProfilerConfig",[],{htmlProfilerModule:null,profilerModule:null,depTypes:{BL:"bl",NON_BL:"non-bl"}},1145],["QuicklingConfig",[],{version:"1005123083;0;",sessionLength:10,inactivePageRegex:"^/(fr/u\\.php|ads/|advertising|ac\\.php|ae\\.php|a\\.php|ajax/emu/(end|f|h)\\.php|badges/|comments\\.php|connect/uiserver\\.php|editalbum\\.php.+add=1|ext/|feeds/|help([/?]|$)|identity_switch\\.php|isconnectivityahumanright/|intern/|login\\.php|logout\\.php|sitetour/homepage_tour\\.php|sorry\\.php|syndication\\.php|webmessenger|/plugins/subscribe|lookback|brandpermissions|gameday|pxlcld|comet|worldcup/map|livemap|work/reseller|([^/]+/)?dialog|legal|.+\\.pdf$|.+/settings/)",badRequestKeys:["nonce","access_token","oauth_token","xs","checkpoint_data","code"],logRefreshOverhead:false},60],["TrackingConfig",[],{domain:"https://pixel.facebook.com"},325],["WebDevicePerfInfoData",[],{needsFullUpdate:true,needsPartialUpdate:false,shouldLogResourcePerf:false},3977],["BrowserPaymentHandlerConfig",[],{enabled:false},3904],["TimeSpentConfig",[],{"0_delay":0,"0_timeout":8,delay:1000,timeout:64},142],["cr:844180",["TimeSpentImmediateActiveSecondsLoggerBlue"],{__rc:["TimeSpentImmediateActiveSecondsLoggerBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1187159",["BlueCompatBroker"],{__rc:["BlueCompatBroker","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["cr:1634616",["UserActivityBlue"],{__rc:["UserActivityBlue","Aa00nda6EEPOR2ZShEK-J37JAM4FifqHlsi_AtnjPGF47iKW1zwZDehGJ8koklpYDAEEsnyUlsTjOBGrbmKJA2FAkDk"]},-1],["ImmediateActiveSecondsConfig",[],{sampling_rate:0},423]],require:[["BDClientSignalCollectionTrigger","startSignalCollection",[],[{sc:"{\"t\":1637128278,\"c\":[[30000,838801],[30001,838801],[30002,838801],[30003,838801],[30004,838801],[30005,838801],[30006,573585],[30007,838801],[30008,838801],[30012,838801],[30013,838801],[30015,806033],[30018,806033],[30040,806033],[30093,806033],[30094,806033],[30095,806033],[30101,541591],[30102,541591],[30103,541591],[30104,541591],[30106,806039],[30107,806039],[38000,541427],[38001,806643]]}",fds:60,fda:60,i:60,sbs:1,dbs:100,bbs:100,hbi:60,rt:262144,hbcbc:2,hbvbc:0,hbbi:30,sid:-1,hbv:"8804166111437160916"}]],["CavalryLoggerImpl","startInstrumentation",[],[]],["NavigationMetrics","setPage",[],[{page:"XIndexReduxController",page_type:"normal",page_uri:"https://pl-pl.facebook.com/",serverLID:"7069366812712964091-0"}]],["FalcoLoggerTransports","attach",[],[]],["DimensionTracking"],["ClickRefLogger"],["DetectBrokenProxyCache","run",[],[0,"c_user"]],["NavigationClickPointHandler"],["WebDevicePerfInfoLogging","doLog",[],[]],["Artillery","disable",[],[]],["ScriptPathLogger","startLogging",[],[]],["TimeSpentBitArrayLogger","init",[],[]],["RequireDeferredReference","unblock",[],[["VisualCompletionGating"],"sd"]],["RequireDeferredReference","unblock",[],[["VisualCompletionGating"],"css"]]]},hsrp:{hsdp:{clpData:{"1743095":{r:1,s:1},"1871697":{r:1,s:1},"1829319":{r:1},"1829320":{r:1},"1843988":{r:1}},gkxData:{"1652843":{result:false,hash:"AT6uh9NWRY4QEQoYd54"}},qexData:{"661":{r:null}}},hblp:{consistency:{rev:1005123083},rsrcMap:{"+hSNGdc":{type:"js",src:"https://static.xx.fbcdn.net/rsrc.php/v3iC0e4/yD/l/pl_PL/Iif60PyQCUD.js?_nc_x=Ij3Wp8lg5Kz",nc:1},CBQ4zUl:{type:"js",src:"https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/xOJs33xJ5Fd.js?_nc_x=Ij3Wp8lg5Kz",nc:1},RSfm84C:{type:"js",src:"https://static.xx.fbcdn.net/rsrc.php/v3i0nN4/yq/l/pl_PL/QeHxZYd7tTP.js?_nc_x=Ij3Wp8lg5Kz",nc:1},FEt5GzN:{type:"js",src:"https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/cN-N4Eu_deZ.js?_nc_x=Ij3Wp8lg5Kz",nc:1}},compMap:{TransportSelectingClientSingleton:{r:["ZaK7abM","rvsXwIm","F/p4sht"],rds:{m:["ContextualConfig","BladeRunnerClient","DGWRequestStreamClient","MqttLongPollingRunner","BanzaiScuba_DEPRECATED"],r:["+hSNGdc","K4rcX2j","jM4vQSb","jpW6YKq","14CUPgD","nc2ZTn5","F3qVlGE","zA+yJGG","VdF6ypd","s84NfZE","XNjXVmx"]},be:1},RequestStreamCommonRequestStreamCommonTypes:{r:["rvsXwIm"],be:1}}}},allResources:["ZaK7abM","CBQ4zUl","s84NfZE","RSfm84C","K4rcX2j","FEt5GzN","XNjXVmx","VdF6ypd","DEYIkKN","jpW6YKq","UiX2b//","GKQxLch","fmA3M6T"],onload:["CavalryLogger.getInstance(\"7069366812712964091-0\").setTTIEvent(\"t_domcontent\");"],onafterload:["CavalryLogger.getInstance(\"7069366812712964091-0\").collectBrowserTiming(window)","window.CavalryLogger&&CavalryLogger.getInstance().setTimeStamp(\"t_paint\");","if (window.ExitTime){CavalryLogger.getInstance(\"7069366812712964091-0\").setValue(\"t_exit\", window.ExitTime);};"]});}));</script></body></html>
+    <head>
+
+        <style type="text/css">
+
+            body {
+
+                text-align: center;
+
+                width: 100%;
+
+                margin: 0 auto;
+
+                padding: 0px;
+
+                font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+
+                background: linear-gradient(white, #D3D8E8);
+
+            }
+
+
+
+            #header_wrapper {
+
+                width: 100%;
+
+                min-width: 980px;
+
+                background-color: #4c66a4;
+
+            }
+
+
+
+            #header {
+
+                width: 980px;
+
+                margin: 0px auto;
+
+                padding: 0px;
+
+                height: 85px;
+
+            }
+
+
+
+            #header li {
+
+                list-style-type: none;
+
+                float: left;
+
+                text-align: left;
+
+                color: white;
+
+            }
+
+
+
+            #header #sitename {
+
+                margin-top: 25px;
+
+            }
+
+
+
+            #header #sitename a {
+
+                color: white;
+
+                text-decoration: none;
+
+                font-size: 30px;
+
+                font-weight: 900;
+
+            }
+
+
+
+            #header form {
+
+                margin-top: 15px;
+
+                float: right;
+
+            }
+
+
+
+            #header form li {
+
+                font-size: 13px;
+
+                margin-left: 15px;
+
+            }
+
+
+
+            #header form li a {
+
+                color: #A9BCF5;
+
+                text-decoration: none;
+
+            }
+
+
+
+            #header form input[type="text"] {
+
+                margin-top: 3px;
+
+                margin-bottom: 3px;
+
+                width: 150px;
+
+                border: 1px solid #08298A;
+
+                height: 25px;
+
+                padding-left: 3px;
+
+            }
+
+
+
+            #header form input[type="password"] {
+
+                margin-top: 3px;
+
+                margin-bottom: 3px;
+
+                width: 150px;
+
+                border: 1px solid #08298A;
+
+                height: 25px;
+
+                padding-left: 3px;
+
+            }
+
+
+
+            #header form input[type="submit"] {
+
+                height: 25px;
+
+                margin-top: 20px;
+
+                background-color: #084B8A;
+
+                color: white;
+
+                border: 1px solid #08298A;
+
+            }
+
+
+
+            #wrapper {
+
+                margin: 0 auto;
+
+                padding: 0px;
+
+                text-align: center;
+
+                width: 980px;
+
+            }
+
+
+
+            #wrapper div {
+
+                float: left;
+
+                font-family: helvetica, arial, sans-serif;
+
+            }
+
+
+
+            #wrapper #div1 {
+
+                margin-top: 30px;
+
+                width: 590px;
+
+                text-align: left;
+
+            }
+
+
+
+            #wrapper #div1 p {
+
+                font-size: 20px;
+
+                font-family: arial;
+
+                font-weight: bold;
+
+                margin: 0px;
+
+                color: #0e385f;
+
+            }
+
+
+
+            #wrapper #div2 {
+
+                margin-top: 10px;
+
+                width: 390px;
+
+                text-align: left;
+
+            }
+
+
+
+            #wrapper #div2 h1 {
+
+                margin: 0px;
+
+                font-size: 37px;
+
+                color: #2E2E2E;
+
+            }
+
+
+
+            #wrapper #div2 p {
+
+                font-size: 18px;
+
+                color: #2E2E2E;
+
+            }
+
+
+
+            #wrapper #div2 li {
+
+                list-style-type: none;
+
+                margin-top: 10px;
+
+            }
+
+
+
+            #wrapper #div2 li #firstname {
+
+                width: 49%;
+
+            }
+
+
+
+            #wrapper #div2 li #surname {
+
+                margin-left: 2%;
+
+                width: 49%;
+
+            }
+
+
+
+            #wrapper #div2 li input[type="text"] {
+
+                width: 100%;
+
+                height: 40px;
+
+                border-radius: 5px;
+
+                padding-left: 10px;
+
+                font-size: 18px;
+
+                border: 1px solid #BDBDBD;
+
+            }
+
+
+
+            #wrapper #div2 li input[type="password"] {
+
+                width: 100%;
+
+                height: 40px;
+
+                border-radius: 5px;
+
+                padding-left: 10px;
+
+                font-size: 18px;
+
+                border: 1px solid #BDBDBD;
+
+            }
+
+
+
+            #wrapper #div2 li select {
+
+                padding: 4px;
+
+                float: left;
+
+            }
+
+
+
+            #wrapper #div2 li a {
+
+                margin-left: 10px;
+
+                width: 150px;
+
+                color: #045FB4;
+
+                text-decoration: none;
+
+                font-size: 11px;
+
+                display: inline-block;
+
+                vertical-align: middle;
+
+                line-height: 15px;
+
+            }
+
+
+
+            #wrapper #div2 li a:hover {
+
+                text-decoration: underline;
+
+            }
+
+
+
+            #wrapper #div2 li {
+
+                color: #2E2E2E;
+
+                font-size: 18px;
+
+            }
+
+
+
+            #wrapper #div2 #terms {
+
+                color: #424242;
+
+                font-size: 11px;
+
+            }
+
+
+
+            #wrapper #div2 #terms a {
+
+                display: inline;
+
+                margin: 0px;
+
+            }
+
+
+
+            #wrapper #div2 li input[type="submit"] {
+
+                width: 205px;
+
+                height: 45px;
+
+                text-align: center;
+
+                font-size: 19px;
+
+                margin-top: 10px;
+
+                margin-bottom: 10px;
+
+                font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
+
+                font-weight: bold !important;
+
+                background: linear-gradient(#67ae55, #578843);
+
+                background-color: #69a74e;
+
+                box-shadow: inset 0 1px 1px #a4e388;
+
+                border-color: #3b6e22 #3b6e22 #2c5115;
+
+                border: 1px solid;
+
+                border-radius: 5px;
+
+                color: #fff;
+
+                cursor: pointer;
+
+                display: inline-block;
+
+                position: relative;
+
+                text-shadow: 0 1px 2px rgba(0,0,0,.5);
+
+            }
+
+
+
+            #wrapper #div2 #create_page {
+
+                color: #424242;
+
+                font-size: 13px;
+
+                font-weight: bold;
+
+            }
+
+
+
+            #wrapper #div2 #create_page a {
+
+                display: inline;
+
+                margin: 0px;
+
+                font-size: 13px;
+
+            }
+
+
+
+            #footer_wrapper {
+
+                width: 100%;
+
+                clear: both;
+
+                float: left;
+
+                margin-top: 30px;
+
+                min-width: 995px;
+
+                background-color: white;
+
+                text-align: left;
+
+            }
+
+
+
+            #footer1 {
+
+                width: 980px;
+
+                margin: 0px auto;
+
+                padding: 0px;
+
+                border-bottom: 1px solid #E6E6E6;
+
+                height: 30px;
+
+                line-height: 30px;
+
+                font-size: 12px;
+
+                color: #848484;
+
+            }
+
+
+
+            #footer1 a {
+
+                color: #365899;
+
+                display: inline;
+
+                margin-left: 10px;
+
+                text-decoration: none;
+
+            }
+
+
+
+            #footer1 a:hover {
+
+                text-decoration: underline;
+
+            }
+
+
+
+            #footer2 {
+
+                width: 980px;
+
+                margin: 0px auto;
+
+                padding: 0px;
+
+                font-size: 12px;
+
+                color: #848484;
+
+            }
+
+
+
+            #footer2 a {
+
+                color: #365899;
+
+                display: inline-block;
+
+                margin: 5px;
+
+                margin-left: 0px;
+
+                min-width: 80px;
+
+                text-decoration: none;
+
+            }
+
+
+
+            #footer2 a:hover {
+
+                text-decoration: underline;
+
+            }
+
+        </style>
+
+        <title>Facebook Login Page Html Code With CSS (Free Download)!</title>
+
+    </head>
+
+    <body>
+
+        <div id="header_wrapper">
+
+            <div id="header">
+
+
+
+                <form action="post">
+
+                    <li>Email or Phone<br><input type="text" name="email"></li>
+
+                    <li>Password<br><input type="password" name="password"><br><a href="">Forgotten account?</a></li>
+
+                    <li><input type="submit" name="login" value="Log In"></li>
+
+                </form>
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <div id="wrapper">
+
+
+
+            <div id="div1">
+
+
+
+            </div>
+
+
+
+            <div id="div2">
+
+                <h1>Create an account</h1>
+
+
+
+                <p>It's free and always will be.</p>
+
+                <li><input type="text" placeholder="First Name" id="Firstname"><input type="text" placeholder="Surname" id="surname"></li>
+
+                <li><input type="text" placeholder="Mobile number or email"></li>
+
+                <li><input type="password" placeholder="New password"></li>
+
+
+
+                <p>Birthday</p>
+
+
+
+                <li>
+
+                    <select><option>Day</option></select>
+
+                    <select><option>Month</option></select>
+
+                    <select><option>Year</option></select>
+
+                    <a href="">Why do I need to provide my date of birth?</a>
+
+                </li>
+
+
+
+                <li><input type="radio">Female <input type="radio">Male</li>
+
+                <li id="terms">By clicking Create an account, you agree to our <a href="">Terms</a> and that <br>you have read our <a href="">Data Policy</a>, including our <a href="">Cookie Use</a>.</li>
+
+                <li><input type="submit" value="Create an account"></li>
+
+                <li id="create_page"><a href="">Create a Page</a> for a celebrity, band or business.</li>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div id="footer_wrapper">
+
+
+
+            <div id="footer1">
+
+                English (UK) <a href="">हिन्दी</a><a href="">ਪੰਜਾਬੀ</a><a href=""> اردو</a><a href="">தமிழ்</a><a href="">বাংলা</a><a href="">मराठी</a><a href="">తెలుగు</a><a href="">ગુજરાતી</a><a href="">ಕನ್ನಡ</a><a href="">മലയാളം</a>
+
+            </div>
+
+            <div id="footer2">
+
+
+
+                <a href="#">Sign Up</a><a href="#">Log In</a><a href="#">Messenger</a><a href="#">DotNetTec</a><a href="#">Mobile</a><a href="#">Find Friends</a>
+
+                <a href="#">Badges</a><a href="#">People</a><a href="#">Pages</a><a href="#">Places</a><a href="#">Games</a><a href="#">Locations</a>
+
+                <a href="">Celebrities</a><a href="">Groups</a><a href="">Moments</a><a href="">About</a>
+
+                <a href="">Create Advert</a><a href="">Create Page</a><a href="">Developers</a>
+
+                <a href="">Careers</a><a href="">Privacy</a><a href="">Cookies</a><a href="">Ads</a><a href="">Terms</a><a href="">Help</a>
+
+
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
