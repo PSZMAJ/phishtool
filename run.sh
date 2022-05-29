@@ -59,7 +59,7 @@ exit_work()
 	exit
 }
 
-
+figlet PHISHTOOL 2.0
 echo " ------------------------------------------------------------------------------ "
 echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.0"
 echo " ------------------------------------------------------------------------------ "
