@@ -6,5 +6,5 @@ echo "Ngrok zosta≈Ç pobrany i rozpakowany w folderze, a plik instalacyjny zosta≈
 echo " podaj klucz do powizania z Twoim kontem"
 read klucz
 ./ngrok config add-authtoken $klucz
-echo " klucz zosta dodany " $klucz
+echo " klucz zostal dodany " $klucz
 echo "koncze prace"
