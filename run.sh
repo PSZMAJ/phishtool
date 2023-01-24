@@ -90,9 +90,9 @@ exit_work()
 	exit
 }
 
-figlet PHISHTOOL 2.2
+figlet PHISHTOOL 2.3
 echo " ------------------------------------------------------------------------------ "
-echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.2"
+echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.3"
 echo " ------------------------------------------------------------------------------ "
 echo -e "\e[5m  KUP KURS NA WWW.EHAKER.PL \e[0m"
 echo -e "\e[5m  KUP KURS NA WWW.EHACKING.PL \e[0m"
