@@ -1,5 +1,6 @@
 # Phishtool
 ## Autor: Przemyslaw Szmaj
+## www.ehaker.pl
 ### Narzedzie automatyzujace testy bezpieczeństwa typu socjotechnika.
 ### Narzędzie powstalo w celu edukacji oraz po to aby pokazaywać, dlaczego ważne jest dbanie o cyberbezpieczeństwo.
 
