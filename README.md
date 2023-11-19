@@ -1,11 +1,12 @@
 # Phishtool
 ## Autor: Przemyslaw Szmaj
-### Narzedzie automatyzujace socjotechnikę
+### Narzedzie automatyzujace testy bezpieczeństwa typu socjotechnika.
+### Narzędzie powstalo w celu edukacji oraz po to aby pokazaywać, dlaczego ważne jest dbanie o cyberbezpieczeństwo.
 
 
 
 ## Uwaga:
-Używanie phishtool do atakowania celów bez uprzedniej wzajemnej zgody jest nielegalne. Obowiązkiem użytkownika końcowego jest przestrzeganie wszystkich obowiązujących przepisów lokalnych, stanowych i federalnych. Programiści nie ponoszą odpowiedzialności i nie ponoszą odpowiedzialności za jakiekolwiek niewłaściwe użycie lub szkody spowodowane przez ten program.
+Używanie phishtool do atakowania celów bez uprzedniej wzajemnej zgody jest nielegalne. Obowiązkiem użytkownika końcowego jest przestrzeganie wszystkich obowiązujących przepisów lokalnych. Programiści/Autorzy/Autor nie ponoszą odpowiedzialności i nie ponoszą odpowiedzialności za jakiekolwiek niewłaściwe użycie lub szkody spowodowane przez ten program.
 
 
 
