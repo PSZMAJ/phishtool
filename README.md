@@ -15,7 +15,7 @@ Używanie phishtool do atakowania celów bez uprzedniej wzajemnej zgody jest nie
 
 ##### Jak uzyc:
 ```
-step 1 - https://github.com/PSZMAJ/phishtool.git
+step 1 - git clone https://github.com/PSZMAJ/phishtool.git
 step 2 - cd phishtool
 step 3 - chmod +x pobranie_ngrok.sh
 step 4 - ./pobranie_ngrok.sh
