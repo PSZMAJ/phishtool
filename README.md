@@ -20,7 +20,7 @@ Używanie phishtool do atakowania celów bez uprzedniej wzajemnej zgody jest nie
 ```
 step 1 - git clone https://github.com/PSZMAJ/phishtool.git
 step 2 - cd phishtool
-step 3 - sudo chmod 777 *
+step 3 - sudo chmod -R 777 *
 step 4 - sudo bash run.sh
 ```
 ##### Pierwsze uzycie
