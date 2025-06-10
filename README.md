@@ -25,13 +25,8 @@ step 4 - sudo bash run.sh
 step 5 - wybierz opcje 0 - PRZYGOTUJ ŚRODOWISKO
 step 6 - Po wybraniu numeru strony do testu, pojawi Ci się okno w którym znajdziesz link do udostępnienia. 
 step 7 - Aby sprawdzić przechwycone dane, otworz plik /var/www/html/dane.txt lub wybierz opcję 15 - Wyświetl przechwycone dane.
-
-![Preview](https://github.com/PSZMAJ/phishtool/blob/main/menu.PNG)
-
-
-
 ```
-
+![Preview](https://github.com/PSZMAJ/phishtool/blob/main/menu.PNG)
 
 ## 📁 Zawartość repozytorium
 - `katalogi` – katalogi, w których znadują się pliki index.html, dzięki którym będzie mozna wykonać test. (symulacja)
