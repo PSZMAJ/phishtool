@@ -22,11 +22,14 @@ step 1 - git clone https://github.com/PSZMAJ/phishtool.git
 step 2 - cd phishtool
 step 3 - sudo chmod 777 *
 step 4 - sudo bash run.sh
-step 5 - wybierz opcje 0 - PRZYGOTUJ ŚRODOWISKO
-step 6 - Po wybraniu numeru strony do testu, pojawi Ci się okno w którym znajdziesz link do udostępnienia. 
-step 7 - Aby sprawdzić przechwycone dane, otworz plik /var/www/html/dane.txt lub wybierz opcję 15 - Wyświetl przechwycone dane.
 ```
-![Preview](https://github.com/PSZMAJ/phishtool/blob/main/menu.PNG)
+##### Pierwsze uzycie
+step 5 - wybierz opcje 0 - PRZYGOTUJ ŚRODOWISKO, bez tego narzędzie nie ma prawa działać.
+```
+![Preview](https://github.com/PSZMAJ/phishtool/blob/main/krok1.PNG)
+
+
+##### Jak uzyc:
 
 ## 📁 Zawartość repozytorium
 - `katalogi` – katalogi, w których znadują się pliki index.html, dzięki którym będzie mozna wykonać test. (symulacja)
