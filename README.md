@@ -26,7 +26,7 @@ step 5 - wybierz opcje 0 - PRZYGOTUJ ŚRODOWISKO
 step 6 - Po wybraniu numeru strony do testu, pojawi Ci się okno w którym znajdziesz link do udostępnienia. 
 step 7 - Aby sprawdzić przechwycone dane, otworz plik /var/www/html/dane.txt lub wybierz opcję 15 - Wyświetl przechwycone dane.
 
-![Zrzut ekranu formularza logowania](okno glowne.png)
+![Preview]([https://example.com/images/preview.png](https://raw.githubusercontent.com/PSZMAJ/phishtool/refs/heads/main/okno%20glowne.PNG))
 
 
 
