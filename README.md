@@ -24,12 +24,25 @@ step 3 - sudo chmod 777 *
 step 4 - sudo bash run.sh
 ```
 ##### Pierwsze uzycie
+```
 step 5 - wybierz opcje 0 - PRZYGOTUJ ŚRODOWISKO, bez tego narzędzie nie ma prawa działać.
 ```
 ![Preview](https://github.com/PSZMAJ/phishtool/blob/main/krok1.PNG)
 
+##### Gdzie znajdę link do udostępnienia?
+```
+step 1 - wybierz interesującą Cię stronę, następnie kliknij jej numer i poczekaj ok 10 sekund.
+Powinno Ci się pojawić okno jak na rysunku poniżej. Na rysunku poniżej zaznaczony jest na czerwono link, wygeneruje Ci się w tym miejscu Twój link do udostępnienia.
+```
+![Preview](https://github.com/PSZMAJ/phishtool/blob/main/link.PNG)
 
-##### Jak uzyc:
+##### Gdzie znajdę przechwycone dane?
+```
+Przechwycone dane możesz zobaczyć na dwa sposoby, pierwszy z nich to przejście do ścieżki /var/www/html i plik dane.txt. Plik w tej lokalizacji generuje się sam automatycznie podczas instalacji narzędzia.
+Drugi z nich to wybranie opcji nr 15 - Wyświetl przechwycone dane.
+```
+![Preview](https://github.com/PSZMAJ/phishtool/blob/main/dane.PNG)
+
 
 ## 📁 Zawartość repozytorium
 - `katalogi` – katalogi, w których znadują się pliki index.html, dzięki którym będzie mozna wykonać test. (symulacja)
