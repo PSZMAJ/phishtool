@@ -172,6 +172,7 @@ echo " -------------------------------------------------------------------------
 echo "   Uzywaj tylko do celow naukowych i testowych."
 echo "   Narzędzie służy wyłącznie do celów **edukacyjnych** i **etycznych**."
 echo "   Nie należy go używać przeciwko osobom trzecim ani poza legalnie autoryzowanym środowiskiem testowym."
+echo "   Jesli pojawia sie problemy z narzedziem - DAJ MI ZNAC - na www.skumajhacking.pl/kontakt"
 
 
 echo "   Autor narzedzia nie ponosi odpowiedzialnosci za uzycie narzedzia w nieetycznym celu"
